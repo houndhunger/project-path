@@ -3,7 +3,7 @@ import { rest } from "msw";
 const baseURL = "https://drf-api-dp-e6ac617a981a.herokuapp.com/";
 
 export const handlers = [
-  rest.get("${baseURL}dj-rest-aurh/user/", (req, res, ctx) => {
+  rest.get(`${baseURL}dj-rest-auth/user/`, (req, res, ctx) => {
     return res(
       ctx.json({
         pk: 2,
@@ -17,7 +17,7 @@ export const handlers = [
       })
     );
   }),
-  rest.post('${baseURL}dj-rest-auth/logout/', (req,res,ctx) => {
-    return res(ctx.status(200));
+  rest.post(`${baseURL}dj-rest-auth/logout/`, (req,res,ctx) => {
+    return res(ctx.status(200))
   })
 ];
