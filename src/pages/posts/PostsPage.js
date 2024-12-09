@@ -26,7 +26,7 @@ function PostsPage({ message, filter = "" }) {
   const { pathname } = useLocation();
 
   const [query, setQuery] = useState("");
-  const useCurrentUser = useCurrentUser();
+  const currentUser = useCurrentUser();
 
 
   useEffect(() => {
