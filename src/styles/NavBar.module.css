@@ -19,3 +19,67 @@
 .Active i {
     color: #2142b2;
 }
+
+.NotificationCount {
+    background-color: red;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
+
+  .NotificationButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .NotificationBadge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+  
+  .NotificationDropdown {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    overflow-y: auto;
+    width: 200px;
+    border-radius: 8px;
+    padding: 10px;
+    display: none;
+  }
+  
+  .NotificationItem {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .NotificationItem:last-child {
+    border-bottom: none;
+  }
+  
+  .NavLink:hover .NotificationDropdown {
+    display: block;
+  }
+  
+  /* For large screens, show the notifications as a page */
+  @media (min-width: 768px) {
+    .NotificationDropdown {
+      display: none;  /* Hide the dropdown on large screens */
+    }
+  }
