@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { axiosReq } from "../../api/axiosDefaults";
-import Notification from "./Notification";  // Assuming you have a Notification component
+import Notification from "./Notification";  
 
 function NotificationsPage() {
   const [notifications, setNotifications] = useState([]);
@@ -10,7 +10,7 @@ function NotificationsPage() {
     const fetchNotifications = async () => {
       try {
         const { data } = await axiosReq.get('/notifications/');
-        console.log(data);  // Log the whole data object for inspection
+        //  console.log(data);  // Log the whole data object for inspection
         
         if (Array.isArray(data.results)) {
           setNotifications(data.results);
@@ -31,7 +31,7 @@ function NotificationsPage() {
     <div>
       <h1>Notifications</h1>
       {hasLoaded ? (
-        Array.isArray(notifications) && notifications.length ? (
+         notifications.length > 0 ? (
           notifications.map((notification) => (
             <Notification key={notification.id} {...notification} />
           ))
