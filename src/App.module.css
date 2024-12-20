@@ -1,5 +1,5 @@
 .App {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   background-color: #f8f8f8;
   min-height: 100vh;
 }
@@ -13,6 +13,11 @@
   padding: 10px;
   border-radius: 2px;
   border: 1px solid #dadadf;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  
 }
 
 .FillerImage {
@@ -38,10 +43,11 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #D57F32;
 }
 
 a:hover i {
-  color: #2142b2;
+  color: #D57F32;
   transition: color ease-in-out 0.3s;
 }
 
@@ -59,7 +65,7 @@ i {
 i:hover {
   cursor: pointer;
   transition: color ease-in-out 0.3s;
-  color: #2142b2;
+  color: #D57F32;
 }
 
 figure {

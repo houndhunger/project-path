@@ -1,7 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Notification({ notification_type, sender_username, sender_id, post_id, post_title, owner, owner_id }) {
+function Notification({
+  id, 
+  is_read,  // Add is_read to props
+  notification_type, 
+  sender_username, 
+  sender_id, 
+  post_id, 
+  post_title, 
+  owner, 
+  owner_id, 
+  markAsRead  // Function passed down from parent
+}) {
   // Compile the notification message based on the notification type
   const { action, postReference, postTitle } = compileNotificationMessage(
     notification_type,
@@ -13,8 +24,19 @@ function Notification({ notification_type, sender_username, sender_id, post_id, 
     owner_id
   );
 
+  // Handle notification click to mark it as read
+  const handleClick = () => {
+    if (!is_read) {
+      markAsRead(id);  // Mark the notification as read
+    }
+  };
+
   return (
-    <div className="notification">
+    <div 
+      className="notification"
+      style={{ fontWeight: is_read ? "normal" : "bold", cursor: "pointer" }} // Bold if unread
+      onClick={handleClick}
+    >
       <p>
         {postReference} {action} {postTitle && <Link to={`/posts/${post_id}`}>{postTitle}</Link>}.
       </p>

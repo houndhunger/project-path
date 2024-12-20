@@ -12,9 +12,7 @@ ReactDOM.render(
   <Router>
     <CurrentUserProvider>
       <ProfileDataProvider>
-        {/* <NotificationProvider> */}
           <App />
-        {/* </NotificationProvider> */}
       </ProfileDataProvider>
     </CurrentUserProvider>
   </Router>,
