@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Notification({
-  id, 
+  id,
   is_read,  // Add is_read to props
   notification_type,
   sender_username,
@@ -11,7 +11,7 @@ function Notification({
   post_title,
   owner,
   owner_id,
-  markAsRead  // Function passed down from parent
+  toggleReadStatus,  // Function passed down from parent
 }) {
   // Compile the notification message based on the notification type
   const { action, postReference, postTitle } = compileNotificationMessage(
@@ -26,9 +26,7 @@ function Notification({
 
   // Handle notification click to mark it as read
   const handleClick = () => {
-    if (!is_read) {
-      markAsRead(id);  // Mark the notification as read
-    }
+      toggleReadStatus(id, is_read);  // Mark the notification as read
   };
 
   return (
@@ -42,7 +40,6 @@ function Notification({
         <span style={{ fontWeight: is_read ? "normal" : "bold" }}>
           {postReference}{" "}
         </span>
-
         {/* Action text goes here */}
         <span>{action}{notification_type !== 'follow' && ": "}</span>
 

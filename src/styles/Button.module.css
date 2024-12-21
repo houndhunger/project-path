@@ -18,6 +18,10 @@
   cursor: pointer;
 }
 
+.Button:hover {
+  background-color: #4A7F7F;
+}
+
 .Button:hover:active {
   background-color: #D57F32 !important;
 }
@@ -39,7 +43,8 @@
 /* BlackOutline is NotFollowButton */
 .FollowButton,
 .Black, .BlackOutline:hover {
-  background-color: #3C5A5A;
+  /*background-color: #3C5A5A;*/
+  background-color: #4A7F7F;
   color: #ddd;
 }
 
@@ -47,7 +52,8 @@
 .Black:hover,
 .BlackOutline {
   background-color: #ddd;
-  color: #3C5A5A;
+  /*color: #3C5A5A;*/
+  color: #4A7F7F;
 }
 
 /* Ireversable Action button  */
@@ -55,34 +61,31 @@
 .ActionButton,
 .CancelButton,
 .CreateButton,
-/*.Blue,*/
-/*.BlueOutline:hover,*/
+.PostButton,
 .Bright:hover {
   background-color: #D57F32;
   color: #ffffff;
 }
 
-/*.BlueOutline,*/
 .ActionButton:hover,
 .CancelButton:hover,
 .CreateButton:hover,
-/*.Blue:hover*/ {
-  /* border: 1px solid #D57F32; */
-  background-color: #ffffff;
-  color: #D57F32;
-}
-
-
-.Bright,
-.ActionButton {
-  background-color: #1E6F7C;
-  color: #eee;
+.PostButton:hover {
+  background-color: #dddddd;
+  color: #8d5422;
+  /*color: #D57F32;*/
 }
 
 /* Ireversable Delete button */
-.DeleteButton {
-  background-color: #D57F32;
-  color: #eee;
+.DeleteButton,
+.Bright   {
+  background-color: #7A5C5A;
+  color: #fff;
+}
+
+.DeleteButton:hover {
+  background-color: #dddddd;
+  color: #7A5C5A;
 }
 
 .ButtonGroup {

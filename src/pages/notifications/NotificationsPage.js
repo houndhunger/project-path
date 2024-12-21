@@ -3,12 +3,12 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 
-import Notification from "./Notification"; // Assume this is a component similar to Post
+import Notification from "./Notification";
 import Asset from "../../components/Asset";
 
 import appStyles from "../../App.module.css";
 import notStyles from "../../styles/NotificationsPage.module.css";
-import btnStyles from "../../styles/Button.module.css"; // Added Button styles import
+import btnStyles from "../../styles/Button.module.css";
 import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 
@@ -46,12 +46,13 @@ function NotificationsPage({ message }) {
       await axiosReq.post("/notifications/mark_all_read/");
 
       // Update state to mark all notifications as read
-      setNotifications((prevNotifications) =>
-        prevNotifications.map((notification) => ({
+      setNotifications((prevNotifications) => ({
+        ...prevNotifications,
+        results: prevNotifications.results.map((notification) => ({
           ...notification,
           is_read: true,
-        }))
-      );
+        })),
+      }));
     } catch (err) {
       console.error("Error marking all notifications as read:", err);
     }
@@ -63,14 +64,36 @@ function NotificationsPage({ message }) {
       await axiosReq.delete("/notifications/delete_all_read/");
 
       // Filter out read notifications from the state
-      setNotifications((prevNotifications) =>
-        prevNotifications.filter((notification) => !notification.is_read)
-      );
+      setNotifications((prevNotifications) => ({
+        ...prevNotifications,
+        results: prevNotifications.results.filter((notification) => !notification.is_read),
+      }));
     } catch (err) {
       console.error("Error deleting all read notifications:", err);
     }
   };
 
+  const toggleReadStatus = async (id, isRead) => {
+    try {
+      const endpoint = isRead
+        ? `/notifications/${id}/mark_unread/`
+        : `/notifications/${id}/mark_read/`;
+      await axiosReq.post(endpoint);
+  
+      setNotifications((prevNotifications) => ({
+        ...prevNotifications,
+        results: prevNotifications.results.map((notification) =>
+          notification.id === id
+            ? { ...notification, is_read: !isRead }
+            : notification
+        ),
+      }));
+    } catch (err) {
+      console.error("Error toggling notification read status:", err);
+    }
+  };
+  
+  
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
@@ -80,7 +103,7 @@ function NotificationsPage({ message }) {
               <h2>Notifications</h2>
               <div className={btnStyles.ButtonGroup}>
                 <button
-                  className={`${btnStyles.Button} {${btnStyles.ActionButton}`}
+                  className={`${btnStyles.Button} ${btnStyles.ActionButton}`}
                   onClick={markAllAsRead}
                 >
                   Mark All as Read
@@ -94,13 +117,16 @@ function NotificationsPage({ message }) {
               </div>
               {notifications.results.length ? (
                 <InfiniteScroll
-                  children={notifications.results.map((notification) => (
-                    <Notification
-                      key={notification.id}
-                      {...notification}
-                      setNotifications={setNotifications}
-                    />
-                  ))}
+                  children={notifications.results
+                    .sort((a, b) => b.id - a.id) // Sort notifications by id in descending order
+                    .map((notification) => (
+                      <Notification
+                        key={notification.id}
+                        {...notification}
+                        setNotifications={setNotifications}
+                        toggleReadStatus={() => toggleReadStatus(notification.id, notification.is_read)}
+                      />
+                    ))}
                   dataLength={notifications.results.length}
                   loader={<Asset spinner />}
                   hasMore={!!notifications.next}
