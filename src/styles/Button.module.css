@@ -1,24 +1,20 @@
+/* General button  */
 .Button {
   background-color: #333;
   color: white;
-  padding: 12px 20px;
   border-radius: 4px;
   border: none;
-  /*transition: background-color 0.3s;*/
+  transition: background-color 0.3s;
   font-size: 0.9rem;
-  /*font-family: Work Sans;*/
+  font-family: Work Sans;
   align-self: center;
-  border-color: transparent;
   padding: 4px 10px;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin: 0px 10px;
   min-width: 75px;
 }
 
 .Button:hover {
   background-color: #555;
-  /*opacity: 0.8;*/
-  border-color: transparent;
   cursor: pointer;
 }
 
@@ -39,22 +35,8 @@
   width: 100%;
 }
 
-.Action,
-.Blue,
-.BlueOutline:hover,
-.Bright:hover {
-  background-color: #D57F32;
-  color: #ffffff;
-}
-
-.BlueOutline,
-.Action:hover,
-.Blue:hover {
-  /* border: 1px solid #D57F32; */
-  background-color: #ffffff;
-  color: #D57F32;
-}
-
+/* Black is FollowButton */
+/* BlackOutline is NotFollowButton */
 .Black, .BlackOutline:hover {
   background-color: #3C5A5A;
   color: #ddd;
@@ -62,14 +44,41 @@
 
 .Black:hover,
 .BlackOutline {
-  /* background-color: #dadadf;
-  color: #242a3d;
-  border-color: #242a3d; */
   background-color: #ddd;
-  color: #4A7F7F;
+  color: #3C5A5A;
 }
 
-.Bright {
+/* Ireversable Action button  */
+/* Bright is LogIn & SignIn button  */
+.Action,
+.Blue,
+/*.BlueOutline:hover,*/
+.Bright:hover {
+  background-color: #D57F32;
+  color: #ffffff;
+}
+
+/*.BlueOutline,*/
+.Action:hover,
+.Blue:hover {
+  /* border: 1px solid #D57F32; */
+  background-color: #ffffff;
+  color: #D57F32;
+}
+
+
+.Bright,
+.ActionButton {
   background-color: #1E6F7C;
   color: #eee;
+}
+
+/* Ireversable Delete button */
+.DeleteButton {
+  background-color: #D57F32;
+  color: #eee;
+}
+
+.ButtonGroup {
+  margin: 15px 0px;
 }
