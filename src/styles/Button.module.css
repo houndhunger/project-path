@@ -37,11 +37,13 @@
 
 /* Black is FollowButton */
 /* BlackOutline is NotFollowButton */
+.FollowButton,
 .Black, .BlackOutline:hover {
   background-color: #3C5A5A;
   color: #ddd;
 }
 
+.FollowButton:hover,
 .Black:hover,
 .BlackOutline {
   background-color: #ddd;
@@ -50,8 +52,10 @@
 
 /* Ireversable Action button  */
 /* Bright is LogIn & SignIn button  */
-.Action,
-.Blue,
+.ActionButton,
+.CancelButton,
+.CreateButton,
+/*.Blue,*/
 /*.BlueOutline:hover,*/
 .Bright:hover {
   background-color: #D57F32;
@@ -59,8 +63,10 @@
 }
 
 /*.BlueOutline,*/
-.Action:hover,
-.Blue:hover {
+.ActionButton:hover,
+.CancelButton:hover,
+.CreateButton:hover,
+/*.Blue:hover*/ {
   /* border: 1px solid #D57F32; */
   background-color: #ffffff;
   color: #D57F32;

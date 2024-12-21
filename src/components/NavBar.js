@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -13,34 +12,12 @@ import Avatar from "./Avatar";
 import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
 import { removeTokenTimestamp } from "../utils/utils";
-import { axiosReq } from "../api/axiosDefaults";
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
-  
-  const [notifications, setNotifications] = useState([]);
-  const [unreadCount, setUnreadCount] = useState(0);
-
   const { expanded, setExpanded, ref } = useClickOutsideToggle();
-  const [hasLoaded, setHasLoaded] = useState(false);
 
-  useEffect(() => {
-    const fetchNotifications = async () => {
-      try {
-        const { data } = await axiosReq.get('/notifications/');
-        setNotifications(Array.isArray(data) ? data : []);  // Ensure data is always an array
-        setHasLoaded(true);
-      } catch (err) {
-        console.error("Failed to fetch notifications:", err);
-        setNotifications([]); // Set to empty array if error occurs
-        setHasLoaded(true);
-      }
-    };
-
-    fetchNotifications();
-  }, []);
-  
   const handleSignOut = async () => {
     try {
       await axios.post("dj-rest-auth/logout/");
@@ -50,8 +27,6 @@ const NavBar = () => {
       console.log(err);
     }
   };
-
-  const unreadNotifications = notifications.filter(notification => !notification.read);
 
   const addPostIcon = (
     <NavLink
