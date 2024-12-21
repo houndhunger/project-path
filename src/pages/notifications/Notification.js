@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 function Notification({
   id, 
   is_read,  // Add is_read to props
-  notification_type, 
-  sender_username, 
-  sender_id, 
-  post_id, 
-  post_title, 
-  owner, 
-  owner_id, 
+  notification_type,
+  sender_username,
+  sender_id,
+  post_id,
+  post_title,
+  owner,
+  owner_id,
   markAsRead  // Function passed down from parent
 }) {
   // Compile the notification message based on the notification type
@@ -32,20 +32,41 @@ function Notification({
   };
 
   return (
-    <div 
+    <div
       className="notification"
-      style={{ fontWeight: is_read ? "normal" : "bold", cursor: "pointer" }} // Bold if unread
+      style={{ cursor: "pointer" }} // Ensure cursor shows pointer on hover
       onClick={handleClick}
     >
       <p>
-        {postReference} {action} {postTitle && <Link to={`/posts/${post_id}`}>{postTitle}</Link>}.
+        {/* Conditionally bold user and post title */}
+        <span style={{ fontWeight: is_read ? "normal" : "bold" }}>
+          {postReference}{" "}
+        </span>
+
+        {/* Action text goes here */}
+        <span>{action}{notification_type !== 'follow' && ": "}</span>
+
+        {/* Post title displayed only if there is a post */}
+        {post_id && (
+          <span style={{ fontWeight: is_read ? "normal" : "bold" }}>
+            <Link to={`/posts/${post_id}`}>{postTitle}</Link>
+          </span>
+        )}
       </p>
     </div>
   );
 }
 
 // Function to compile message based on notification type
-function compileNotificationMessage(notification_type, sender_username, sender_id, post_id, post_title, owner, owner_id) {
+function compileNotificationMessage(
+  notification_type,
+  sender_username,
+  sender_id,
+  post_id,
+  post_title,
+  owner,
+  owner_id
+) {
   const postReference = sender_username ? (
     <Link to={`/profiles/${sender_id}`}>{sender_username}</Link>
   ) : (
@@ -53,26 +74,23 @@ function compileNotificationMessage(notification_type, sender_username, sender_i
   );
 
   let action = "";
-  let postTitle = post_title ? `"${post_title}"` : "your post"; // If post_title exists, format it
+  let postTitle = post_title ? post_title : ""; // Only the raw title, no quotes
 
   switch (notification_type) {
     case "like":
-      action = `liked ${postTitle}`;
+      action = `liked your post`;
       break;
     case "comment":
-      action = `commented on ${postTitle}`;
+      action = `commented on your post`;
       break;
     case "follow":
       action = `started following you`;
-      postTitle = ""; // No post title needed for follow
       break;
     case "new_post":
-      action = `created a new post: ${postTitle}`;
-      postTitle = ""; // We include the post title in action already, so reset it here
+      action = `created a new post`;
       break;
     default:
       action = "interacted with your post";
-      postTitle = ""; // Default action, no post title displayed
       break;
   }
 

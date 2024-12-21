@@ -1,5 +1,7 @@
 # Project Path
 
+**Ideas Meeting Audience**
+
 ## Curriculum
 
 The Social Platform for Architectural Inspiration and Collaboration

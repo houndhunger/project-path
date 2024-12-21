@@ -32,6 +32,23 @@
   /* Notification Item */
   .notification-item {
     padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .notification-item.unread {
+    background-color: #f0f0f0;
+  }
+  
+  .notification-item.read {
+    background-color: #d3ffd3;  /* Or any other color for read notifications */
+    text-decoration: line-through;
+  }
+
+  .notification-item {
+    padding: 10px;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
   }

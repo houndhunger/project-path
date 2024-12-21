@@ -39,6 +39,7 @@
   width: 100%;
 }
 
+.Action,
 .Blue,
 .BlueOutline:hover,
 .Bright:hover {
@@ -47,6 +48,7 @@
 }
 
 .BlueOutline,
+.Action:hover,
 .Blue:hover {
   /* border: 1px solid #D57F32; */
   background-color: #ffffff;
@@ -69,5 +71,5 @@
 
 .Bright {
   background-color: #1E6F7C;
-  color: #D57F32;
+  color: #eee;
 }

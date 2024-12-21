@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import logo from "../assets/logo64.png";
+import logo from "../assets/logo.png";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
 import { 
@@ -59,7 +59,7 @@ const NavBar = () => {
       activeClassName={styles.Active}
       to="/posts/create"
     >
-      <i className="far fa-plus-square"></i><span className={styles.BreakableText}>Add post</span>
+      <i className="far fa-plus-square"></i><span className={styles.BreakableText}>Add project</span>
     </NavLink>
   );
 
@@ -126,7 +126,7 @@ const NavBar = () => {
       <Container>
         <NavLink to="/">
           <Navbar.Brand>
-            <img src={logo} alt="logo" height="64" />
+            <img src={logo} alt="logo" height="48" /><span className={styles.LogoText}>PROJECT PATH</span>
           </Navbar.Brand>
         </NavLink>
         {currentUser && addPostIcon}
