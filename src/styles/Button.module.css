@@ -40,10 +40,9 @@
 }
 
 /* Black is FollowButton */
-/* BlackOutline is NotFollowButton */
+/* BlackOutline is UnfollowButton */
 .FollowButton,
 .Black, .BlackOutline:hover {
-  /*background-color: #3C5A5A;*/
   background-color: #4A7F7F;
   color: #ddd;
 }
@@ -52,12 +51,11 @@
 .Black:hover,
 .BlackOutline {
   background-color: #ddd;
-  /*color: #3C5A5A;*/
   color: #4A7F7F;
 }
 
-/* Ireversable Action button  */
-/* Bright is LogIn & SignIn button  */
+/* Ireversable - Action button  */
+/* Bright - LogIn & SignIn button  */
 .ActionButton,
 .CancelButton,
 .CreateButton,
@@ -73,10 +71,9 @@
 .PostButton:hover {
   background-color: #dddddd;
   color: #8d5422;
-  /*color: #D57F32;*/
 }
 
-/* Ireversable Delete button */
+/* Ireversable - Delete button */
 .DeleteButton,
 .Bright   {
   background-color: #7A5C5A;

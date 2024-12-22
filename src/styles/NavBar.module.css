@@ -12,6 +12,7 @@
   align-items: center;
 }
 
+/* logo text - PROJECT PATH */
 .LogoText {
   margin-top: auto;
   font-size: 20px;
@@ -20,9 +21,9 @@
   display: none;
   font-family: Poppins;
   font-weight: 500;
-
 }
 
+/* display logo text - PROJECT PATH on larger screens */ 
 @media (min-width: 992px) {
   .LogoText {
       display: inline;
@@ -37,14 +38,19 @@
     font-weight: 700;
 }
 
+/* Prevents "Sign out" from breaking onto two lines */
 .BreakableText {
     display: inline;
     white-space: nowrap;
-    /* Prevents "Sign out" from breaking onto two lines */
     margin-left: 0.5rem;
-    /* Adds spacing between icon and text */
 }
 
 .Active i {
     color: #D57F32;
+}
+
+@media (max-width: 767.98px) {
+  .NavBar>.container {
+    float: right;
+  }
 }

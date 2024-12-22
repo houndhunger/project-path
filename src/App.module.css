@@ -16,14 +16,13 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-  
-}
-
+/* Ensures the image covers its container, maintains aspect ratio, spans
+full width, and adjusts height and margin for proper alignment. */
 .FillerImage {
   object-fit: cover;
-  height: 100%;
+  height: calc(100% - 16px);
   width: 100%;
+  margin: 8px 0;
 }
 
 .Image {

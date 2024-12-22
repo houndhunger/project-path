@@ -7,12 +7,12 @@ import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
+import signinimage from "../../assets/sign-in.png";
 
 import { Link } from "react-router-dom";
 
-import styles from "../../styles/SignInUpForm.module.css";
+import signStyles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import { useRedirect } from "../../hooks/useRedirect";
@@ -54,15 +54,15 @@ const SignInForm = () => {
   };
 
   return (
-    <Row className={styles.Row}>
+    <Row className={signStyles.Row}>
       <Col className="my-auto p-0 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
-          <h1 className={styles.Header}>sign in</h1>
+          <h1 className={signStyles.Header}>sign in</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="username">
               <Form.Label className="d-none">User name</Form.Label>
               <Form.Control
-                className={styles.Input}
+                className={signStyles.Input}
                 type="text"
                 placeholder="Username"
                 name="username"
@@ -79,7 +79,7 @@ const SignInForm = () => {
             <Form.Group controlId="password">
               <Form.Label className="d-none">Password</Form.Label>
               <Form.Control
-                className={styles.Input}
+                className={signStyles.Input}
                 type="password"
                 placeholder="Password"
                 name="password"
@@ -108,19 +108,17 @@ const SignInForm = () => {
           </Form>
         </Container>
         <Container className={`mt-3 ${appStyles.Content}`}>
-          <Link className={styles.Link} to="/signup">
+          <Link className={signStyles.Link} to="/signup">
             Don&apos;t have an account? <span>Sign up now!</span>
           </Link>
         </Container>
       </Col>
       <Col
         md={6}
-        className={`my-auto d-none d-md-block p-2 ${styles.SignInCol}`}
+        className={`my-auto d-none d-md-block p-2 ${signStyles.SignInCol}`}
       >
-        <Image
-          className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero.jpg"}
-        />
+        <img src={signinimage} alt="sign_in_image" className={appStyles.FillerImage} />
+
       </Col>
     </Row>
   );

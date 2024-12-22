@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 
-import styles from "../../styles/SignInUpForm.module.css";
+import signStyles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
+import signupimage from "../../assets/sign-up.png";
 
 import axios from "axios";
 import { useRedirect } from "../../hooks/useRedirect";
@@ -47,16 +47,16 @@ const SignUpForm = () => {
   };
 
   return (
-    <Row className={styles.Row}>
+    <Row className={signStyles.Row}>
       <Col className="my-auto py-2 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
-          <h1 className={styles.Header}>sign up</h1>
+          <h1 className={signStyles.Header}>sign up</h1>
 
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="username">
               <Form.Label className="d-none">username</Form.Label>
               <Form.Control 
-                className={styles.Input} 
+                className={signStyles.Input} 
                 type="text" 
                 placeholder="Username"
                 name="username" 
@@ -73,7 +73,7 @@ const SignUpForm = () => {
             <Form.Group controlId="password1">
               <Form.Label className="d-none">Password</Form.Label>
               <Form.Control 
-                className={styles.Input} 
+                className={signStyles.Input} 
                 type="password" 
                 placeholder="Password" 
                 name="password1"
@@ -90,7 +90,7 @@ const SignUpForm = () => {
             <Form.Group controlId="password2">
               <Form.Label className="d-none">Confirm password</Form.Label>
               <Form.Control 
-                className={styles.Input} 
+                className={signStyles.Input} 
                 type="password" 
                 placeholder="Confirm password" 
                 name="password2"
@@ -119,19 +119,16 @@ const SignUpForm = () => {
         </Container>
 
         <Container className={`mt-3 ${appStyles.Content}`}>
-          <Link className={styles.Link} to="/signin">
+          <Link className={signStyles.Link} to="/signin">
             Already have an account? <span>Sign in</span>
           </Link>
         </Container>
       </Col>
       <Col
         md={6}
-        className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}
+        className={`my-auto d-none d-md-block p-2 ${signStyles.SignUpCol}`}
       >
-        <Image
-          className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero2.jpg"}
-        />
+        <img src={signupimage} alt="sign_up_image" className={appStyles.FillerImage} />
       </Col>
     </Row>
   );

@@ -2,6 +2,8 @@
 
 **Ideas Meeting Audience**
 
+![Project path Mockup](docs/images/mockup-image.png)
+
 ## Curriculum
 
 The Social Platform for Architectural Inspiration and Collaboration
@@ -51,6 +53,8 @@ Wireframes were created to ensure the user interface is intuitive, clean, and ar
 - **Login Page**: Simple form layout with essential input fields for authentication.
 
 ## Project Management - Kanban Board
+
+![Agile Project - Kanban Board](docs/images/agile-kanban.png)
 
 For efficient project management, a **Kanban Board** is used to track progress, manage tasks, and ensure the project stays on schedule.
 
@@ -273,7 +277,6 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
     This page appears when a user navigates to a broken or unavailable link.
 
 
-!!! UPDATE
  ### Entity-Relationship Diagram (ERD)
   - The following ERD outlines the relationships between models in the system:
 
@@ -396,39 +399,170 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
   - **Problem**: Static files, including CSS for the admin panel, were not being applied correctly after deploying the application to Heroku, causing the admin interface to appear unstyled.
   - **Solution**: Pending investigation and update to ensure static files are properly configured and served on Heroku for correct styling in the admin panel.
 
-
  ## Testing
  ### Code validation 
-- **HTML**: The following paths have been validated and no errors were found when passing through the [W3C validator](https://validator.w3.org/).
-    - [app/](https://django-restaurant-web-and-book-565ecd4fe61b.herokuapp.com/)
-    - [app/menu/](https://django-restaurant-web-and-book-565ecd4fe61b.herokuapp.com/menu/) 
-
+ **Front end**
 - **CSS**: The following file has been validated and no errors were found when passing through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/).
-  - [static/css/style.css](https://django-restaurant-web-and-book-565ecd4fe61b.herokuapp.com/static/css/style.css)
 
-- **JavaScript**: The following file has been validated and no errors were found when passing through the [jshint.com](https://jshint.com/). New JavaScript features (ES6) settings are turned on. Results show no errors.
-[static/css/style.css](https://django-restaurant-web-and-book-565ecd4fe61b.herokuapp.com/static/js/flatpickr.js)
+- **JavaScript - JSX**: The following file has been validated and no errors were found when passing through the [ESLint](https://eslint.org/).
+  - [static/js/flatpickr.js](https://django-restaurant-web-and-book-565ecd4fe61b.herokuapp.com/static/js/flatpickr.js)
+  - JavaScript follows the ES6+ standards with ESLint configuration enabled for the project.
+  
+ **Back end**
+- **Python**: Code passes [pep8ci](https://pep8ci.herokuapp.com/)and [pylint](https://pypi.org/project/pylint/) validation with 100% success. Validated are following 
+  - **files:** admin.py, apps.py, models.py, serializers.py, serialziers.py, signals.py, urls.py, views.py
+  - **folders:** followers, likes, notifications, posts, profiles
 
-- **Python**: Code passes [pep8ci](https://pep8ci.herokuapp.com/) validation with 100% success validating following files:
-  - [booking/reservation_utils.py](booking/utils/reservation_utils.py)  
-  - [booking/admin.py](booking/admin.py)  
-     
-
+!!! Fill tables with images and text
 ### Test Cases
 #### Manual Testing
-Here are the key manual tests performed on the reservation booking system:
+Here are the key manual tests performed on using project path web:
 
-1. **Make a Reservation**
-    - **Test**: Create a new reservation with valid data.
-    - **Expected Result**: Reservation is created and visible under "My Reservations".
-    - **Steps**: 
+1. **Add a Project**
+    - **Test:** Create a new project with valid data.
+    - **Expected Result:** Project is added and visible in the project list.
+    - **Steps:**
+        1. Fill in project name and description.
+        2. Click "Add Project".
+        3. Verify that the new project appears in the list.
+
+2. **Edit a Project**
+    - **Test:** Edit an existing project.
+    - **Expected Result:** Project details are updated successfully.
+    - **Steps:**
+        1. Click "Edit" on an existing project.
+        2. Change the project name or description.
+        3. Click "Save".
+        4. Verify the project details have been updated.
+
+3. **Delete a Project**
+    - **Test:** Delete a project.
+    - **Expected Result:** Project is removed from the project list.
+    - **Steps:**
+        1. Click "Delete" on a project.
+        2. Confirm deletion.
+        3. Verify the project is no longer visible.
+
+4. **Post a Comment**
+    - **Test:** Add a comment to a project.
+    - **Expected Result:** Comment appears under the project.
+    - **Steps:**
+        1. Navigate to a project.
+        2. Enter a comment in the comment box.
+        3. Click "Post Comment".
+        4. Verify the comment appears under the project.
+
+5. **Edit a Comment**
+    - **Test:** Edit an existing comment.
+    - **Expected Result:** Comment is updated successfully.
+    - **Steps:**
+        1. Hover over an existing comment.
+        2. Click "Edit".
+        3. Modify the text and save.
+        4. Verify the comment is updated.
+
+6. **Delete a Comment**
+    - **Test:** Remove a comment from a project.
+    - **Expected Result:** Comment is removed.
+    - **Steps:**
+        1. Hover over a comment.
+        2. Click "Delete".
+        3. Confirm deletion.
+        4. Verify the comment is no longer visible.
+
+7. **Give and Remove Like**
+    - **Test:** Like and unlike a project or comment.
+    - **Expected Result:** Like is toggled on and off successfully.
+    - **Steps:**
+        1. Click "Like" on a project or comment.
+        2. Verify the like count increases.
+        3. Click "Unlike" to remove the like.
+        4. Verify the like count decreases.
+
+8. **Follow and Unfollow a User**
+    - **Test:** Follow and unfollow a user.
+    - **Expected Result:** User's follow status is toggled successfully.
+    - **Steps:**
+        1. Click "Follow" on a user's profile.
+        2. Verify the follow count increases.
+        3. Click "Unfollow" to remove the follow.
+        4. Verify the follow count decreases.
+
+9. **View Notifications**
+    - **Test:** View new and unread notifications.
+    - **Expected Result:** Notifications are listed and correctly marked as unread.
+    - **Steps:**
+        1. Navigate to the notifications page.
+        2. Verify unread notifications are listed at the top.
+        3. Verify read notifications are marked as read.
+
+10. **Read and Unread Notifications**
+    - **Test:** Mark notifications as read or unread.
+    - **Expected Result:** Notifications can be toggled between read/unread states.
+    - **Steps:**
+        1. Click on a notification to mark it as read.
+        2. Verify the notification is marked as read.
+        3. Click on a read notification to mark it as unread.
+        4. Verify the notification is marked as unread.
+
+11. **Delete Notifications**
+    - **Test:** Delete a notification.
+    - **Expected Result:** Notification is removed from the list.
+    - **Steps:**
+        1. Click "Delete" on a notification.
+        2. Confirm deletion.
+        3. Verify the notification is no longer listed.
+
+12. **Log-in - Existing User and Log-out**
+    - **Test:** Log in and log out with an existing user.
+    - **Expected Result:** User can log in and out successfully.
+    - **Steps:**
+        1. Enter valid login credentials.
+        2. Click "Log In".
+        3. Verify redirection to the dashboard.
+        4. Click "Log Out".
+        5. Verify successful logout and redirection to the login page.
+
+13. **Sign-in - New User**
+    - **Test:** Register a new user.
+    - **Expected Result:** User is created and redirected to the dashboard.
+    - **Steps:**
+        1. Fill in registration form with valid details.
+        2. Click "Sign Up".
+        3. Verify user is redirected to the dashboard.
+
+14. **View and Edit Profile**
+    - **Test:** View and edit user profile.
+    - **Expected Result:** User profile can be viewed and edited successfully.
+    - **Steps:**
+        1. Navigate to the profile page.
+        2. Edit the profile details (e.g., name, bio).
+        3. Click "Save Changes".
+        4. Verify the updated details appear on the profile.
+
+15. **Change Username**
+    - **Test:** Change the username.
+    - **Expected Result:** Username is updated successfully.
+    - **Steps:**
+        1. Navigate to the profile edit page.
+        2. Change the username.
+        3. Click "Save Changes".
+        4. Verify the username is updated on the profile.
+
+16. **Change Password**
+    - **Test:** Change the user password.
+    - **Expected Result:** Password is updated successfully.
+    - **Steps:**
+        1. Navigate to the password change page.
+        2. Enter the current password, new password, and confirm new password.
+        3. Click "Change Password".
+        4. Verify successful password update.
 
 | | | | |
 |:-|:-|:-|:-|
 | 1. Log in to the system. | 2. Navigate to "Make a Reservation". | 3. Fill in reservation details (date & time, guest count, note, preferences). | 4. Submit and check if the reservation is successfully saved. |
 | ![Sign In](docs/images/sign-in-page.png) | ![Make reservation](docs/images/make-a-reservation-full-page.png) | ![Fill in reservation details](docs/images/make-a-reservation-full-filled-page.png) | ![My reservations](docs/images/my-reservations-page.png) |
 
-2. **Edit Reservation**
 
 ## Credits
 - **Mentor**: Thanks to my mentor for his guidance and support throughout the development of this project.
