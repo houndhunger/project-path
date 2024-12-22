@@ -10,6 +10,46 @@ The Social Platform for Architectural Inspiration and Collaboration
 
 Project Path is a Full-Stack web application designed to help users showcase and share their portfolio projects. It provides an intuitive platform where users can create, organize, and manage their projects, leveraging a React frontend for an engaging user experience and a REST API backend for reliable functionality. The application enables seamless project sharing, collaboration, and visibility for personal and professional growth.
 
+## UX Design and Visual Decisions
+
+### Visual Design Choices
+The following design decisions were made to ensure a clean, modern, and architectural aesthetic for the user interface of the project:
+
+#### **Fonts**
+- **Logo Font**: *Poppins* – Geometric and contemporary style, adding a modern touch while maintaining legibility.
+- **Primary Font**: *Source Sans 3* – Clean and neutral look, ideal for body text and content-heavy sections.
+- **Button Font**: *Work Sans* – Readable and geometric, maintaining a modern and clean appearance.
+- **Navigation Font**: *Quicksand* – Friendly yet contemporary feel, maintaining legibility in the navigation menu.
+
+#### **Colors**
+The color palette was chosen to give a minimalist and architectural feel with subtle contrasts:
+
+- **Background Color**: #FFFFFF (White) – Clean and minimal.
+- **Text Color**: #000000 (Black) – High contrast for readability.
+
+#### **Button Colors**
+- **General Button**: Default **#333** (Dark Grey), Hover **#4A7F7F** (Soft Teal), Active **#D57F32** (Muted Copper).
+- **Follow Button**: Default **#4A7F7F** (Soft Teal), Hover **#ddd** (Light Grey).
+- **Action Button**: Default **#D57F32** (Muted Copper), Hover **#dddddd** (Light Grey).
+- **Delete Button**: Default **#7A5C5A** (Muted Burgundy), Hover **#dddddd** (Light Grey).
+
+#### **Button Styles**
+Simple, rounded buttons with neutral or accent colors for various actions, providing clear feedback on hover and active states.
+
+#### **Additional Design Elements**
+- **Box Shadows**: Subtle shadows are applied to containers, and the navbar to create depth. The navbar has a heavier shadow to stand out.
+- **Rounded Corners**: Small 2px rounded corners are used for containers and form elements to maintain a modern and clean look.
+- **Navbar Highlighting**: The active navbar item is highlighted with **#D57F32** (Muted Copper) to indicate the selected section.
+- **Container Background**: Containers and the navbar have a soft background color of **#f8f8f8**, contributing to a light and minimal aesthetic.
+
+### Wireframes
+Wireframes were created to ensure the user interface is intuitive, clean, and architecturally cohesive. The wireframes outline the layout and visual hierarchy of key pages such as the Dashboard and Login pages.
+
+!!! FILL IMAGES
+#### **Key Wireframe Screens**
+- **Dashboard**: Displays key navigation items, actions, and user profile.
+- **Login Page**: Simple form layout with essential input fields for authentication.
+
 ## Project Management - Kanban Board
 
 For efficient project management, a **Kanban Board** is used to track progress, manage tasks, and ensure the project stays on schedule.
@@ -196,20 +236,27 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
 !!! ADD IMAGES
 ## Structure
 
-### Components:
+### React Components:
 - **Navigation Bar**  
     The fully responsive navigation bar is present on all pages, providing links to Home, Menu, and other key sections like the user's Profile and Notifications. For signed-in users, the navigation bar also provides links to Create Post, Feed, Liked Posts, and Profile. The bar adapts based on whether a user is signed in or not, ensuring seamless navigation across devices.  
 
     ![Nav Bar](docs/images/navigation-bar-image.png)
-- **Most Followed Profiles**  
+- **Most Followed - Popular Profiles**  
     This component displays a list of the most followed profiles, giving users easy access to popular or influential accounts within the platform.
 - **Search Bar **  
     The search bar, Displayed in Posts Pages, allows users to easily find content by searching for specific posts, users, or keywords. It is conveniently placed to ensure quick access to the desired content.
 - **More Dropdown**  
     Available on the post pages, the "More Dropdown" provides users with options to edit or delete their own posts or comments. This functionality ensures that users have control over their content.
+- **Asset**
+    A reusable component for displaying a spinner, image, or message, typically used for loading states or asset display.
+- **Avatar**
+    A component for displaying a user's profile image, with customizable size and optional text.
+- 
 ### Pages:
-- **Add / Edit Post**  
+- **Add Post**  
     A page dedicated to adding new posts or editing existing ones. Users can input title, description, add image, and make necessary changes to previously created content.
+- **Post Page & Edit Form**  
+    A dedicated page for viewing individual posts. Users can add or edit their posts, comment, like, and interact with the post content.
 - **Posts - Home**  
     The home page that displays an overview of most recent posts. It serves as the main landing page for content discovery.
 - **Posts - Feed**  
@@ -218,10 +265,10 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
     A page that displays all posts the user has liked, providing easy access to content they have shown interest in.
 - **Notifications**  
     A page that displays notifications about recent interactions such as new likes, comments on posts, and follow activity. It keeps users informed about important actions related to their account.
-- **Profile**  
+- **Profile Page & Edit Form, Change username, Chage password**  
     The profile page allows users to view and edit their information, including changing their username and updating their password. Furthermore shows sum count of own posts, followers, following, viewing and managing own posts.
-- **Post Page**  
-    A dedicated page for viewing individual posts. Users can add or edit their posts, comment, like, and interact with the post content.
+- **SignIn & SiugnUp Pages**  
+    The Sign In and Sign Up pages allow users to authenticate their accounts by logging in or creating a new account. These pages facilitate seamless access to the platform's features, ensuring secure and efficient user onboarding.
 - **Not Found Page**  
     This page appears when a user navigates to a broken or unavailable link.
 
