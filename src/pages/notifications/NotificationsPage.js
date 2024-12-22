@@ -66,7 +66,9 @@ function NotificationsPage({ message }) {
       // Filter out read notifications from the state
       setNotifications((prevNotifications) => ({
         ...prevNotifications,
-        results: prevNotifications.results.filter((notification) => !notification.is_read),
+        results: prevNotifications.results.filter(
+          (notification) => !notification.is_read
+        ),
       }));
     } catch (err) {
       console.error("Error deleting all read notifications:", err);
@@ -79,7 +81,7 @@ function NotificationsPage({ message }) {
         ? `/notifications/${id}/mark_unread/`
         : `/notifications/${id}/mark_read/`;
       await axiosReq.post(endpoint);
-  
+
       setNotifications((prevNotifications) => ({
         ...prevNotifications,
         results: prevNotifications.results.map((notification) =>
@@ -92,8 +94,7 @@ function NotificationsPage({ message }) {
       console.error("Error toggling notification read status:", err);
     }
   };
-  
-  
+
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
@@ -117,24 +118,33 @@ function NotificationsPage({ message }) {
               </div>
               {notifications.results.length ? (
                 <InfiniteScroll
-                  children={notifications.results
+                  dataLength={notifications.results.length}
+                  loader={<Asset spinner />}
+                  hasMore={!!notifications.next}
+                  next={() => fetchMoreData(notifications, setNotifications)}
+                >
+                  {notifications.results
                     .sort((a, b) => b.id - a.id) // Sort notifications by id in descending order
                     .map((notification) => (
                       <Notification
                         key={notification.id}
                         {...notification}
                         setNotifications={setNotifications}
-                        toggleReadStatus={() => toggleReadStatus(notification.id, notification.is_read)}
+                        toggleReadStatus={() =>
+                          toggleReadStatus(
+                            notification.id,
+                            notification.is_read
+                          )
+                        }
                       />
                     ))}
-                  dataLength={notifications.results.length}
-                  loader={<Asset spinner />}
-                  hasMore={!!notifications.next}
-                  next={() => fetchMoreData(notifications, setNotifications)}
-                />
+                </InfiniteScroll>
               ) : (
                 <div className={notStyles.NoNotifications}>
-                  <Asset src={NoResults} message={message || "No notifications"} />
+                  <Asset
+                    src={NoResults}
+                    message={message || "No notifications"}
+                  />
                 </div>
               )}
             </div>

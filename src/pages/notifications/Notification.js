@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Notification({
   id,
-  is_read,  // Add is_read to props
+  is_read,
   notification_type,
   sender_username,
   sender_id,
@@ -11,7 +11,7 @@ function Notification({
   post_title,
   owner,
   owner_id,
-  toggleReadStatus,  // Function passed down from parent
+  toggleReadStatus,
 }) {
   // Compile the notification message based on the notification type
   const { action, postReference, postTitle } = compileNotificationMessage(
@@ -26,7 +26,7 @@ function Notification({
 
   // Handle notification click to mark it as read
   const handleClick = () => {
-      toggleReadStatus(id, is_read);  // Mark the notification as read
+    toggleReadStatus(id, is_read); // Mark the notification as read
   };
 
   return (
@@ -36,14 +36,14 @@ function Notification({
       onClick={handleClick}
     >
       <p>
-        {/* Conditionally bold user and post title */}
         <span style={{ fontWeight: is_read ? "normal" : "bold" }}>
-          {postReference}{" "}
+          {postReference}
+          {" "}
         </span>
-        {/* Action text goes here */}
-        <span>{action}{notification_type !== 'follow' && ": "}</span>
-
-        {/* Post title displayed only if there is a post */}
+        <span>
+          {action}
+          {notification_type !== "follow" && ": "}
+        </span>
         {post_id && (
           <span style={{ fontWeight: is_read ? "normal" : "bold" }}>
             <Link to={`/posts/${post_id}`}>{postTitle}</Link>
@@ -60,9 +60,7 @@ function compileNotificationMessage(
   sender_username,
   sender_id,
   post_id,
-  post_title,
-  owner,
-  owner_id
+  post_title
 ) {
   const postReference = sender_username ? (
     <Link to={`/profiles/${sender_id}`}>{sender_username}</Link>
