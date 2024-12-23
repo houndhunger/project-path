@@ -96,7 +96,7 @@ const Post = (props) => {
         </Media>
       </Card.Body>
       <Link to={`/posts/${id}`}>
-        <Card.Img src={image} alt={title} />
+      <Card.Img src={image} alt={`Cover image for ${title}`} />
       </Link>
       <Card.Body>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
@@ -126,9 +126,9 @@ const Post = (props) => {
             </OverlayTrigger>
           )}
           {likes_count}
-          <Link to={`/posts/${id}`}>
-            <i className="far fa-comments" />
-          </Link>
+          <Link to={`/posts/${id}`} aria-label={`Go to post ${title}`}>
+          <i className="far fa-comments" />
+        </Link>
           {comments_count}
         </div>
       </Card.Body>

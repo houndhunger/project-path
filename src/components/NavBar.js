@@ -99,11 +99,12 @@ const NavBar = () => {
       expand="md"
       fixed="top">
       <Container>
-        <NavLink to="/">
-          <Navbar.Brand>
-            <img src={logo} alt="logo" height="48" /><span className={styles.LogoText}>PROJECT PATH</span>
-          </Navbar.Brand>
-        </NavLink>
+      <NavLink to="/">
+        <Navbar.Brand>
+          <img src={logo} alt="Project Path logo" height="48" />
+          <span className={styles.LogoText}>PROJECT PATH</span>
+        </Navbar.Brand>
+      </NavLink>
         {currentUser && addPostIcon}
         <Navbar.Toggle
           ref={ref}
@@ -118,7 +119,8 @@ const NavBar = () => {
               activeClassName={styles.Active}
               to="/"
             >
-              <i className="fas fa-home"></i>Home
+              <i className="fas fa-home" aria-hidden="true"></i>
+              <span className="sr-only">Home</span>
             </NavLink>
 
             {currentUser ? loggedInIcons : loggedOutIcons}

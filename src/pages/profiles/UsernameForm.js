@@ -56,10 +56,12 @@ const UsernameForm = () => {
     <Row>
       <Col className="py-2 mx-auto text-center" md={6}>
         <Container className={appStyles.Content}>
+        < h2>Change your Username</h2>
           <Form onSubmit={handleSubmit} className="my-2">
             <Form.Group>
-              <Form.Label>Change username</Form.Label>
+              <Form.Label htmlFor="username">Change username</Form.Label>
               <Form.Control
+                id="username"
                 placeholder="username"
                 type="text"
                 value={username}

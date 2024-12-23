@@ -55,6 +55,7 @@ Wireframes were created to ensure the user interface is intuitive, clean, and ar
 ## Project Management - Kanban Board
 
 ![Agile Project - Kanban Board](docs/images/agile-kanban.png)
+*[Project Path - Kanban Board](https://github.com/users/houndhunger/projects/4)*
 
 For efficient project management, a **Kanban Board** is used to track progress, manage tasks, and ensure the project stays on schedule.
 
@@ -237,7 +238,6 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
 - **Project Bookmarking**: Users will be able to bookmark projects they are interested in for easy access later.
 - **Cross-platform Integration**: The platform will support integration with other project management tools and social media platforms to increase visibility and engagement for project posts.
 
-!!! ADD IMAGES
 ## Structure
 
 ### React Components:
@@ -283,12 +283,12 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
 
 - **Post Page & Edit Form**  
     A dedicated page for viewing individual posts. Users can add or edit their posts, comment, like, and interact with the post content.
-- **Posts - Home**  
-    The home page that displays an overview of most recent posts. It serves as the main landing page for content discovery.
-- **Posts - Feed**  
-    The home page that displays an overview of posts of folloed users. A dynamic feed page where users can see new posts in real-time, interact with them, and engage with the community.
-- **Posts - Liked**  
-    A page that displays all posts the user has liked, providing easy access to content they have shown interest in.
+!!! ADD IMAGE here
+
+- **Posts - Home, Feed, and Liked**  
+    The **Home** page displays an overview of the most recent posts and serves as the main landing page for content discovery. The **Feed** page showcases posts from followed users in a dynamic feed, allowing users to see updates in real-time, interact with posts, and engage with the community. The **Liked** page provides a dedicated space for viewing all posts the user has liked, offering easy access to content they have shown interest in.
+!!! ADD IMAGE here
+
 - **Notifications**  
     A page that displays notifications about recent interactions such as new likes, comments on posts, and follow activity. It keeps users informed about important actions related to their account.
     ![Notifications component](docs/images/components/notifications.png)

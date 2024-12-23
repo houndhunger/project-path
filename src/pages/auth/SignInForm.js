@@ -60,12 +60,16 @@ const SignInForm = () => {
           <h1 className={signStyles.Header}>sign in</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="username">
-              <Form.Label className="d-none">User name</Form.Label>
+              <Form.Label className="d-none" htmlFor="username">
+                User name
+              </Form.Label>
               <Form.Control
                 className={signStyles.Input}
                 type="text"
                 placeholder="Username"
                 name="username"
+                id="username"
+                aria-label="Username"
                 value={username}
                 onChange={handleChange}
               />
@@ -77,12 +81,16 @@ const SignInForm = () => {
             ))}
 
             <Form.Group controlId="password">
-              <Form.Label className="d-none">Password</Form.Label>
+              <Form.Label className="d-none" htmlFor="password">
+                Password
+              </Form.Label>
               <Form.Control
                 className={signStyles.Input}
                 type="password"
                 placeholder="Password"
                 name="password"
+                id="password"
+                aria-label="Password"
                 value={password}
                 onChange={handleChange}
               />
@@ -117,8 +125,11 @@ const SignInForm = () => {
         md={6}
         className={`my-auto d-none d-md-block p-2 ${signStyles.SignInCol}`}
       >
-        <img src={signinimage} alt="sign_in_image" className={appStyles.FillerImage} />
-
+        <img
+          src={signinimage}
+          alt="Decorative image for sign-in page"
+          className={appStyles.FillerImage}
+        />
       </Col>
     </Row>
   );
