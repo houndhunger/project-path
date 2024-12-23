@@ -243,22 +243,44 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
 ### React Components:
 - **Navigation Bar**  
     The fully responsive navigation bar is present on all pages, providing links to Home, Menu, and other key sections like the user's Profile and Notifications. For signed-in users, the navigation bar also provides links to Create Post, Feed, Liked Posts, and Profile. The bar adapts based on whether a user is signed in or not, ensuring seamless navigation across devices.  
+  ![Navigation bar on large screen](docs/images/components/navigation-bar-large-screen.png)  
+  *Navigation bar on a large screen.*
 
-    ![Nav Bar](docs/images/navigation-bar-image.png)
+  ![Navigation bar for screens less than 1200px](docs/images/components/navigation-bar-screen-lessthen1200.png)  
+  *Navigation bar for screens less than 1200px.*
+
+  ![Navigation bar for screens less than 992px](docs/images/components/navigation-bar-screen-lessthen992.png)  
+  *Navigation bar for screens less than 992px.*
+
+  ![Navigation bar for screens less than 768px](docs/images/components/navigation-bar-screen-lessthen768.png)  
+  *Navigation bar for screens less than 768px.*
+
+  ![Navigation bar with menu open for screens less than 768px](docs/images/components/navigation-bar-screen-lessthen768-open.png)  
+  *Navigation bar with menu open for screens less than 768px.*
+
 - **Most Followed - Popular Profiles**  
     This component displays a list of the most followed profiles, giving users easy access to popular or influential accounts within the platform.
-- **Search Bar **  
+    ![Most followed profiles component](docs/images/components/Most-followed-profiles.png)
+
+- **Search Bar**  
     The search bar, Displayed in Posts Pages, allows users to easily find content by searching for specific posts, users, or keywords. It is conveniently placed to ensure quick access to the desired content.
+    ![Search bar component](docs/images/components/search-bar.png)
+
 - **More Dropdown**  
     Available on the post pages, the "More Dropdown" provides users with options to edit or delete their own posts or comments. This functionality ensures that users have control over their content.
+    ![More dropdown component](docs/images/components/more-dropdown.png)
+
 - **Asset**
     A reusable component for displaying a spinner, image, or message, typically used for loading states or asset display.
 - **Avatar**
     A component for displaying a user's profile image, with customizable size and optional text.
-- 
+    ![Avatar](docs/images/components/avatar.png)
+
 ### Pages:
-- **Add Post**  
+- **Add Project**  
     A page dedicated to adding new posts or editing existing ones. Users can input title, description, add image, and make necessary changes to previously created content.
+    ![Add Project component](docs/images/components/add-project.png)
+
 - **Post Page & Edit Form**  
     A dedicated page for viewing individual posts. Users can add or edit their posts, comment, like, and interact with the post content.
 - **Posts - Home**  
@@ -269,18 +291,34 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
     A page that displays all posts the user has liked, providing easy access to content they have shown interest in.
 - **Notifications**  
     A page that displays notifications about recent interactions such as new likes, comments on posts, and follow activity. It keeps users informed about important actions related to their account.
+    ![Notifications component](docs/images/components/notifications.png)
+
 - **Profile Page & Edit Form, Change username, Chage password**  
     The profile page allows users to view and edit their information, including changing their username and updating their password. Furthermore shows sum count of own posts, followers, following, viewing and managing own posts.
-- **SignIn & SiugnUp Pages**  
+    ![Profile 'More' dropdown menu](docs/images/components/more-dropdown-profile.png)  
+    *The 'More' dropdown menu in the profile section.*
+
+    ![Edit profile page layout](docs/images/pages/page-edit-profile.png)  
+    *The page layout for editing a user's profile.*
+
+    ![Change username page layout](docs/images/pages/page-change-user-name.png)  
+    *The page layout for changing a user's username.*
+
+    ![Change password page layout](docs/images/pages/page-change-password.png)  
+    *The page layout for changing a user's password.*
+
+- **SignIn & SiugUp Pages**  
     The Sign In and Sign Up pages allow users to authenticate their accounts by logging in or creating a new account. These pages facilitate seamless access to the platform's features, ensuring secure and efficient user onboarding.
+    ![Sign in page](docs/images/pages/page-signin.png)
+    ![Sign up page](docs/images/pages/page-signup.png)
+
 - **Not Found Page**  
     This page appears when a user navigates to a broken or unavailable link.
-
+    ![Not found page](docs/images/components/not-found-page.png)
 
  ### Entity-Relationship Diagram (ERD)
   - The following ERD outlines the relationships between models in the system:
-
- ![Email Notifications](docs/images/erd.png)
+  ![ERD](docs/images/erd.png)
 
 ## Back-End
 
