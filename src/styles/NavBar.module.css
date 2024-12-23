@@ -50,7 +50,24 @@
 }
 
 @media (max-width: 767.98px) {
-  .NavBar>.container {
-    float: right;
+  .NavLink {
+    display: flex;
+    justify-content: flex-end;  /* Align items to the left */
+    width: 50%;  /* 2/3 of the screen */
+    margin-left: auto;  /* Push the container to the right */
+  }
+
+  .NavLink {
+    display: flex;
+    align-items: center;
+  }
+  
+  .NavLink i,
+  .NavLink img {
+    order: 1; /* This will make <i> appear after the text */
+  }
+  
+  .NavLink span {
+    order: 0; /* This ensures the text stays before the <i> */
   }
 }
