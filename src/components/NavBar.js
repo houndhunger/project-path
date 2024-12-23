@@ -120,7 +120,7 @@ const NavBar = () => {
               to="/"
             >
               <i className="fas fa-home" aria-hidden="true"></i>
-              <span className="sr-only">Home</span>
+              <span>Home</span>
             </NavLink>
 
             {currentUser ? loggedInIcons : loggedOutIcons}

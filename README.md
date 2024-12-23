@@ -298,13 +298,13 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
     ![Profile 'More' dropdown menu](docs/images/components/more-dropdown-profile.png)  
     *The 'More' dropdown menu in the profile section.*
 
-    ![Edit profile page layout](docs/images/pages/page-edit-profile.png)  
+    ![Edit profile page layout](docs/images/component/component-edit-profile.png)  
     *The page layout for editing a user's profile.*
 
-    ![Change username page layout](docs/images/pages/page-change-user-name.png)  
+    ![Change username page layout](docs/images/component/component-change-user-name.png)  
     *The page layout for changing a user's username.*
 
-    ![Change password page layout](docs/images/pages/page-change-password.png)  
+    ![Change password page layout](docs/images/component/component-change-password.png)  
     *The page layout for changing a user's password.*
 
 - **SignIn & SiugUp Pages**  
@@ -349,32 +349,61 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
 - **As a user, I want to be able to navigate the site with ease:**  
   - **Problem:** Users need intuitive navigation to access different features across the site.  
   - **Action:** Implement a responsive navigation bar with links to Home, Feed, and Profile, as well as sign-in and sign-up options for unauthenticated users.  
-  - **Outcome:** Users can easily navigate the site on any device.  
+  - **Outcome:** Users can easily navigate the site on any device. 
 
-- **As a user, I want to register and sign in to access my account:**  
-  - **Problem:** Users need secure access to their personalized accounts.  
-  - **Action:** Implement sign-up and sign-in functionality with form validation.  
-  - **Outcome:** Users can securely register and sign in to their accounts.  
+| | | |
+| :- | :- | :-|
+|  |  |  |
+| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
-- **As a user, I want to add posts to share content:**  
-  - **Problem:** Users need a way to create posts that display on their profile and in feeds.  
-  - **Action:** Develop an "Add Post" component where users can create posts with text and images.  
-  - **Outcome:** Users can successfully create posts and share content.  
+- **As a user, I want to register and sign in to access my account:**
+  - **Problem:** Users need secure access to their personalized accounts.
+  - **Action:** Implement sign-up and sign-in functionality with form validation.
+  - **Outcome:** Users can securely register and sign in to their accounts.
 
-- **As a user, I want to edit or delete my content (post):**  
-  - **Problem:** Users need the ability to modify or remove their posts after they are created.  
-  - **Action:** Implement edit and delete functionality on each post to allow users to update or remove their content.  
-  - **Outcome:** Users can easily modify or delete their posts, ensuring content remains relevant and up to date.  
+| | | |
+| :- | :- | :-|
+| User clicks on SIGN UP in Navigation menu, which leads user to SIGN UP page | User fills name, password and confirmation password. Then clicks Sign Up button | User will be redirected SIGN IN page |
+| ![blank](docs/images/pages/page-signup.png) | ![blank](docs/images/pages/page-signup-filled.png) | ![blank](docs/images/pages/page-signin.png) |
+| User fills name and password. Then clicks Sign In button | User will be redirected to Home page |  |
+| ![blank](docs/images/pages/page-signin-filled.png) | ![blank](docs/images/pages/page-homepage-frank.png) | ![blank](docs/images/blank.png) |
 
-- **As a user, I want to view and manage my profile:**  
-  - **Problem:** Users need a centralized page to view and edit their personal information and posts.  
-  - **Action:** Create a Profile page displaying user details, posts, followers, and following lists.  
-  - **Outcome:** Users can manage their profiles and view their activity.  
+- **As a user, I want to add posts to share content:**
+  - **Problem:** Users need a way to create posts that display on their profile and in feeds.
+  - **Action:** Develop an "Add Post" component where users can create posts with text and images.
+  - **Outcome:** Users can successfully create posts and share content.
 
-- **As a user, I want to discover popular profiles:**  
-  - **Problem:** Users need a way to find inspiring content and connect with active users.  
-  - **Action:** Display a "Most Followed Profiles" section.  
-  - **Outcome:** Users can easily find and follow popular profiles.  
+| | | |
+| :- | :- | :-|
+| User clicks on ADD PROJECT in Navigation menu, which leads user to Project Post page | User loads image by clicking on upload icon | User fills Project Title and Project Description |
+| ![blank](docs/images/pages/page-addproject.png) | ![blank](docs/images/pages/page-addproject-withimage.png) | ![blank](docs/images/pages/page-addproject-filled.png) |
+| User submits project by clicking create and is forwarded to Project Post which user just created  |  |  |
+| ![blank](docs/images/pages/page-projectpost.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
+
+- **As a user, I want to edit or delete my content (post):**
+  - **Problem:** Users need the ability to modify or remove their posts after they are created.
+  - **Action:** Implement edit and delete functionality on each post to allow users to update or remove their content.
+  - **Outcome:** Users can easily modify or delete their posts, ensuring content remains relevant and up to date.
+
+| | | |
+| :- | :- | :-|
+| User from Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post | By clicikng pencil icon user is forwarded to Project Post Edit page | Edit coresponding fields and submit Project Post with changes by clicking save button |
+| ![blank](docs/images/pages/page-projectpost-moredropdown.png) | ![blank](docs/images/pages/page-addproject-filled.png) | ![blank](docs/images/blank.png) |
+
+- **As a user, I want to view and manage my profile:**
+  - **Problem:** Users need a centralized page to view and edit their personal information and posts.
+  - **Action:** Create a Profile page displaying user details, posts, followers, and following lists.
+  - **Outcome:** Users can manage their profiles and view their activity.
+
+  | | | |
+| :- | :- | :-|
+|  |  |  |
+| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
+
+- **As a user, I want to discover popular profiles:**
+  - **Problem:** Users need a way to find inspiring content and connect with active users.
+  - **Action:** Display a "Most Followed Profiles" section.
+  - **Outcome:** Users can easily find and follow popular profiles.
 
 - **As a user, I want to engage with posts through likes and comments:**  
   - **Problem:** Users need interactive features to show appreciation and provide feedback.  
@@ -384,42 +413,48 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
 - **As a user, I want to follow or unfollow profiles:**  
   - **Problem:** Users need a way to connect with or disconnect from other profiles.  
   - **Action:** Implement follow/unfollow functionality across the site.  
-  - **Outcome:** Users can easily manage their connections.  
+  - **Outcome:** Users can easily manage their connections. 
 
 | | | |
-|:-|:-|:-|
-| User opens the "Home page" | User clicks "Sign Up" link in the navigation menu or on the "Home page", which leads user to "Sign Up" page | Fills the "Sign Up" page |
-| ![Home page](docs/images/home-page.png) | ![Sign Up](docs/images/sign-up-page.png) | ![Fill Sign Up](docs/images/sign-up-filled-page.png) |
-| Submits the "Sign Up" page by clicking the "Sign Up" button, which leads the user to the "Verify Your Email Address" page | User will receive a notification email, with an activation link | By clicking on the activation link, the user will open the "Confirm Email Address" page |
-| ![Verify Your Email Address](docs/images/verify-your-email-address-page.png) | ![blank](docs/images/email-notifications-sign-up.png) | ![Confirm Email Address](docs/images/confirm-email-address-page.png) |
-| By clicking on the "Confirm" button, the user will finish sign up process landing on the "Home page" |  |  |
+| :- | :- | :-|
+|  |  |  |
+| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
+|  |  |  |
+| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
+|  |  |  |
 | ![blank](docs/images/home-page.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
-
 
 ## Bugs and Issues
 
 ### Solved Bugs
+
 - **Post Like Issue**
+
   - **Problem**: Likes were not correctly counted for posts after the first like, leading to inaccurate like counts.
   - **Solution**: Updated the like counting logic to handle multiple likes properly on the same post.
 
 - **Follow Feature Bug**
+
   - **Problem**: Users were unable to unfollow others due to a database query error, which resulted in an unresponsive unfollow feature.
   - **Solution**: Corrected the database queries to resolve the unfollow action bug.
 
 - **Profile Display Issue**
+
   - **Problem**: User profiles were not displaying accurate follower and following counts, causing inconsistencies in the profile view.
   - **Solution**: Fixed the data retrieval logic to ensure the correct number of followers and following were shown.
 
 - **Responsive Layout Bug**
+
   - **Problem**: The site layout was not responsive on mobile devices, causing elements to overlap and become difficult to navigate.
   - **Solution**: Applied responsive design fixes to ensure that the layout adjusts properly across different screen sizes.
 
 - **Image Loading Issue**
+
   - **Problem**: Profile images (and potentially other images later) were not loading correctly on certain pages, resulting in broken image links.
   - **Solution**: Fixed the image source URLs and optimized the loading process, using Cloudinary to ensure proper image display and efficient loading.
 
 - **Form Validation Bug**
+
   - **Problem**: Front-end form validation was not triggering on some forms, causing submission errors.
   - **Solution**: Corrected the validation script to ensure proper triggering of front-end form validation before submission.
 
@@ -437,178 +472,199 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
   - **Problem**: Static files, including CSS for the admin panel, were not being applied correctly after deploying the application to Heroku, causing the admin interface to appear unstyled.
   - **Solution**: Pending investigation and update to ensure static files are properly configured and served on Heroku for correct styling in the admin panel.
 
- ## Testing
- ### Code validation 
- **Front end**
+## Testing
+
+### Code validation
+
+**Front end**
+
 - **CSS**: The following file has been validated and no errors were found when passing through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/).
 
 - **JavaScript - JSX**: The following file has been validated and no errors were found when passing through the [ESLint](https://eslint.org/).
   - [static/js/flatpickr.js](https://django-restaurant-web-and-book-565ecd4fe61b.herokuapp.com/static/js/flatpickr.js)
   - JavaScript follows the ES6+ standards with ESLint configuration enabled for the project.
-  
- **Back end**
-- **Python**: Code passes [pep8ci](https://pep8ci.herokuapp.com/)and [pylint](https://pypi.org/project/pylint/) validation with 100% success. Validated are following 
+  **Back end**
+- **Python**: Code passes [pep8ci](https://pep8ci.herokuapp.com/)and [pylint](https://pypi.org/project/pylint/) validation with 100% success. Validated are following
   - **files:** admin.py, apps.py, models.py, serializers.py, serialziers.py, signals.py, urls.py, views.py
   - **folders:** followers, likes, notifications, posts, profiles
 
 !!! Fill tables with images and text
+
 ### Test Cases
+
 #### Manual Testing
+
 Here are the key manual tests performed on using project path web:
 
 1. **Add a Project**
-    - **Test:** Create a new project with valid data.
-    - **Expected Result:** Project is added and visible in the project list.
-    - **Steps:**
-        1. Fill in project name and description.
-        2. Click "Add Project".
-        3. Verify that the new project appears in the list.
+
+   - **Test:** Create a new project with valid data.
+   - **Expected Result:** Project is added and visible in the project list.
+   - **Steps:**
+     1. Fill in project name and description.
+     2. Click "Add Project".
+     3. Verify that the new project appears in the list.
 
 2. **Edit a Project**
-    - **Test:** Edit an existing project.
-    - **Expected Result:** Project details are updated successfully.
-    - **Steps:**
-        1. Click "Edit" on an existing project.
-        2. Change the project name or description.
-        3. Click "Save".
-        4. Verify the project details have been updated.
+
+   - **Test:** Edit an existing project.
+   - **Expected Result:** Project details are updated successfully.
+   - **Steps:**
+     1. Click "Edit" on an existing project.
+     2. Change the project name or description.
+     3. Click "Save".
+     4. Verify the project details have been updated.
 
 3. **Delete a Project**
-    - **Test:** Delete a project.
-    - **Expected Result:** Project is removed from the project list.
-    - **Steps:**
-        1. Click "Delete" on a project.
-        2. Confirm deletion.
-        3. Verify the project is no longer visible.
+
+   - **Test:** Delete a project.
+   - **Expected Result:** Project is removed from the project list.
+   - **Steps:**
+     1. Click "Delete" on a project.
+     2. Confirm deletion.
+     3. Verify the project is no longer visible.
 
 4. **Post a Comment**
-    - **Test:** Add a comment to a project.
-    - **Expected Result:** Comment appears under the project.
-    - **Steps:**
-        1. Navigate to a project.
-        2. Enter a comment in the comment box.
-        3. Click "Post Comment".
-        4. Verify the comment appears under the project.
+
+   - **Test:** Add a comment to a project.
+   - **Expected Result:** Comment appears under the project.
+   - **Steps:**
+     1. Navigate to a project.
+     2. Enter a comment in the comment box.
+     3. Click "Post Comment".
+     4. Verify the comment appears under the project.
 
 5. **Edit a Comment**
-    - **Test:** Edit an existing comment.
-    - **Expected Result:** Comment is updated successfully.
-    - **Steps:**
-        1. Hover over an existing comment.
-        2. Click "Edit".
-        3. Modify the text and save.
-        4. Verify the comment is updated.
+
+   - **Test:** Edit an existing comment.
+   - **Expected Result:** Comment is updated successfully.
+   - **Steps:**
+     1. Hover over an existing comment.
+     2. Click "Edit".
+     3. Modify the text and save.
+     4. Verify the comment is updated.
 
 6. **Delete a Comment**
-    - **Test:** Remove a comment from a project.
-    - **Expected Result:** Comment is removed.
-    - **Steps:**
-        1. Hover over a comment.
-        2. Click "Delete".
-        3. Confirm deletion.
-        4. Verify the comment is no longer visible.
+
+   - **Test:** Remove a comment from a project.
+   - **Expected Result:** Comment is removed.
+   - **Steps:**
+     1. Hover over a comment.
+     2. Click "Delete".
+     3. Confirm deletion.
+     4. Verify the comment is no longer visible.
 
 7. **Give and Remove Like**
-    - **Test:** Like and unlike a project or comment.
-    - **Expected Result:** Like is toggled on and off successfully.
-    - **Steps:**
-        1. Click "Like" on a project or comment.
-        2. Verify the like count increases.
-        3. Click "Unlike" to remove the like.
-        4. Verify the like count decreases.
+
+   - **Test:** Like and unlike a project or comment.
+   - **Expected Result:** Like is toggled on and off successfully.
+   - **Steps:**
+     1. Click "Like" on a project or comment.
+     2. Verify the like count increases.
+     3. Click "Unlike" to remove the like.
+     4. Verify the like count decreases.
 
 8. **Follow and Unfollow a User**
-    - **Test:** Follow and unfollow a user.
-    - **Expected Result:** User's follow status is toggled successfully.
-    - **Steps:**
-        1. Click "Follow" on a user's profile.
-        2. Verify the follow count increases.
-        3. Click "Unfollow" to remove the follow.
-        4. Verify the follow count decreases.
+
+   - **Test:** Follow and unfollow a user.
+   - **Expected Result:** User's follow status is toggled successfully.
+   - **Steps:**
+     1. Click "Follow" on a user's profile.
+     2. Verify the follow count increases.
+     3. Click "Unfollow" to remove the follow.
+     4. Verify the follow count decreases.
 
 9. **View Notifications**
-    - **Test:** View new and unread notifications.
-    - **Expected Result:** Notifications are listed and correctly marked as unread.
-    - **Steps:**
-        1. Navigate to the notifications page.
-        2. Verify unread notifications are listed at the top.
-        3. Verify read notifications are marked as read.
+
+   - **Test:** View new and unread notifications.
+   - **Expected Result:** Notifications are listed and correctly marked as unread.
+   - **Steps:**
+     1. Navigate to the notifications page.
+     2. Verify unread notifications are listed at the top.
+     3. Verify read notifications are marked as read.
 
 10. **Read and Unread Notifications**
+
     - **Test:** Mark notifications as read or unread.
     - **Expected Result:** Notifications can be toggled between read/unread states.
     - **Steps:**
-        1. Click on a notification to mark it as read.
-        2. Verify the notification is marked as read.
-        3. Click on a read notification to mark it as unread.
-        4. Verify the notification is marked as unread.
+      1. Click on a notification to mark it as read.
+      2. Verify the notification is marked as read.
+      3. Click on a read notification to mark it as unread.
+      4. Verify the notification is marked as unread.
 
 11. **Delete Notifications**
+
     - **Test:** Delete a notification.
     - **Expected Result:** Notification is removed from the list.
     - **Steps:**
-        1. Click "Delete" on a notification.
-        2. Confirm deletion.
-        3. Verify the notification is no longer listed.
+      1. Click "Delete" on a notification.
+      2. Confirm deletion.
+      3. Verify the notification is no longer listed.
 
 12. **Log-in - Existing User and Log-out**
+
     - **Test:** Log in and log out with an existing user.
     - **Expected Result:** User can log in and out successfully.
     - **Steps:**
-        1. Enter valid login credentials.
-        2. Click "Log In".
-        3. Verify redirection to the dashboard.
-        4. Click "Log Out".
-        5. Verify successful logout and redirection to the login page.
+      1. Enter valid login credentials.
+      2. Click "Log In".
+      3. Verify redirection to the dashboard.
+      4. Click "Log Out".
+      5. Verify successful logout and redirection to the login page.
 
 13. **Sign-in - New User**
+
     - **Test:** Register a new user.
     - **Expected Result:** User is created and redirected to the dashboard.
     - **Steps:**
-        1. Fill in registration form with valid details.
-        2. Click "Sign Up".
-        3. Verify user is redirected to the dashboard.
+      1. Fill in registration form with valid details.
+      2. Click "Sign Up".
+      3. Verify user is redirected to the dashboard.
 
 14. **View and Edit Profile**
+
     - **Test:** View and edit user profile.
     - **Expected Result:** User profile can be viewed and edited successfully.
     - **Steps:**
-        1. Navigate to the profile page.
-        2. Edit the profile details (e.g., name, bio).
-        3. Click "Save Changes".
-        4. Verify the updated details appear on the profile.
+      1. Navigate to the profile page.
+      2. Edit the profile details (e.g., name, bio).
+      3. Click "Save Changes".
+      4. Verify the updated details appear on the profile.
 
 15. **Change Username**
+
     - **Test:** Change the username.
     - **Expected Result:** Username is updated successfully.
     - **Steps:**
-        1. Navigate to the profile edit page.
-        2. Change the username.
-        3. Click "Save Changes".
-        4. Verify the username is updated on the profile.
+      1. Navigate to the profile edit page.
+      2. Change the username.
+      3. Click "Save Changes".
+      4. Verify the username is updated on the profile.
 
 16. **Change Password**
     - **Test:** Change the user password.
     - **Expected Result:** Password is updated successfully.
     - **Steps:**
-        1. Navigate to the password change page.
-        2. Enter the current password, new password, and confirm new password.
-        3. Click "Change Password".
-        4. Verify successful password update.
+      1. Navigate to the password change page.
+      2. Enter the current password, new password, and confirm new password.
+      3. Click "Change Password".
+      4. Verify successful password update.
 
 | | | | |
-|:-|:-|:-|:-|
+| :- | :- | :- | :- |
 | 1. Log in to the system. | 2. Navigate to "Make a Reservation". | 3. Fill in reservation details (date & time, guest count, note, preferences). | 4. Submit and check if the reservation is successfully saved. |
-| ![Sign In](docs/images/sign-in-page.png) | ![Make reservation](docs/images/make-a-reservation-full-page.png) | ![Fill in reservation details](docs/images/make-a-reservation-full-filled-page.png) | ![My reservations](docs/images/my-reservations-page.png) |
-
+| ![Sign In](docs/images/sign-in-page.png) | ![Make reservation](docs/images/make-a-reservation-full-page.png) | ![Fill in reservation details](docs/images/make-a-reservation-full-filled-page.png) | ![My reservations](docs/images/my-reservations-page.png)      |
 
 ## Credits
+
 - **Mentor**: Thanks to my mentor for his guidance and support throughout the development of this project.
 - **Code Institute Tutor Service**: Special thanks to the Code Institute Tutor Service for their assistance in difficult times and valuable feedback.
 - **ChatGPT Service**: Appreciation to ChatGPT for providing helpful advice and code suggestions during the project development.
 - **Family**: A heartfelt thank you to my wife, who lovingly took on all the household responsibilities, allowing me the time and focus to work on this project. Her constant support and understanding made this possible.
 
 ## License
+
 This project is open-source and available under the MIT License. Feel free to fork, modify, and distribute the code for educational or commercial purposes.
 
 ---

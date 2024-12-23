@@ -86,6 +86,7 @@ const ProfileEditForm = () => {
   const textFields = (
     <>
       <Form.Group>
+        <Form.Label htmlFor="bio-textarea">Bio</Form.Label>
         <Form.Control
           as="textarea"
           id="bio-textarea"
@@ -104,10 +105,15 @@ const ProfileEditForm = () => {
       <Button
         className={`${btnStyles.Button} ${btnStyles.Action}`}
         onClick={() => history.goBack()}
+        aria-label="Cancel changes and go back"
       >
         cancel
       </Button>
-      <Button className={`${btnStyles.Button} ${btnStyles.Action}`} type="submit">
+      <Button 
+        className={`${btnStyles.Button} ${btnStyles.Action}`} 
+        type="submit"
+        aria-label="Save changes"
+      >
         save
       </Button>
     </>

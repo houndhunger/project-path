@@ -15,7 +15,7 @@ const NotFound = () => {
             <br />
             Unfortunately, the page you&apos;re looking for seems to have been swept away.
           </p>
-        }
+        } 
       />
     </div>
   );
