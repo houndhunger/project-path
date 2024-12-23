@@ -4,6 +4,55 @@
 
 ![Project path Mockup](docs/images/mockup-image.png)
 
+## Table of Contents
+- [Curriculum](#curriculum)
+- [Purpose of the Project](#purpose-of-the-project)
+- [UX Design and Visual Decisions](#ux-design-and-visual-decisions)
+  - [Visual Design Choices](#visual-design-choices)
+    - [Fonts](#fonts)
+    - [Colors](#colors)
+    - [Button Colors](#button-colors)
+    - [Button Styles](#button-styles)
+    - [Additional Design Elements](#additional-design-elements)
+  - [Wireframes](#wireframes)
+- [Project Management - Kanban Board](#project-management---kanban-board)
+  - [Labels for the Tasks](labels-for-the-tasks)
+  - [Sprints](#sprints)
+- [Technologies Used](#technologies-used)
+  - [Languages](#languages)
+  - [Frameworks, Libraries, and Tools](#frameworks-libraries-and-tools)
+    - [Frontend Technologies](#frontend-tech)
+    - [Backend Technologies](#backend-tech)
+  - [Authentication](#authentication)
+  - [Deployment Tools](#deployment-tools)
+  - [Development Tools](#development-tools)
+  - [Version Information](#version-information)
+- [Supported screens and browsers](#supported-screens-and-browsers)
+- [Installation](#installation)
+  - [Steps to Set Up](#steps-to-set-up)
+- [Deployment](#deployment)
+  - [Via Gitpod](#via-gitpod)
+  - [Via Heroku](#via-Heroku)
+- [Features](#features)
+- [Future Enhancements](#future-enhancements)
+- [Structure](#structure)
+  - [React Components](#react-components)
+  - [Pages](#pages)
+  - [Entity-Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
+- [Development Process](#development-process)
+  - [Back-End development](#back-end-development)
+  - [Front-End development](#front-end-development)
+- [User Stories](#user-stories)
+- [Bugs and Issues](#bugs-and-issues)
+  - [Solved Bugs](#solved-bugs)
+  - [Unsolved Bugs](#unsolved-bugs)
+- [Testing](#testing)
+  - [Code validation](#code-validation)
+    - [Front end](#front-end)
+    - [Back end](#back-end)
+  - [Test Cases](#test-cases)
+    - [Manual Testing](#manual-testing)
+
 ## Curriculum
 
 The Social Platform for Architectural Inspiration and Collaboration
@@ -47,14 +96,20 @@ Simple, rounded buttons with neutral or accent colors for various actions, provi
 ### Wireframes
 Wireframes were created to ensure the user interface is intuitive, clean, and architecturally cohesive. The wireframes outline the layout and visual hierarchy of key pages such as the Dashboard and Login pages.
 
-!!! FILL IMAGES
-#### **Key Wireframe Screens**
-- **Dashboard**: Displays key navigation items, actions, and user profile.
-- **Login Page**: Simple form layout with essential input fields for authentication.
+**Key Wireframe Screens:**
+
+![Dashboard wireframe showing key navigation and user profile](docs/images/wireframes/wireframe-home-page-feed.png)  
+*-**Dashboard**: Displays key navigation items, actions, and user profile.*
+
+![Login page wireframe with input fields for email and password](docs/images/wireframes/wireframe-signin.png)  
+*-**Login Page**: Simple form layout with essential input fields for authentication.*
+
+![Notifications wireframe with options to mark as read or delete](docs/images/wireframes/wireframe-notifications.png)  
+*-**Notifications**: List of notifications with read control and deletion.*
 
 ## Project Management - Kanban Board
 
-![Agile Project - Kanban Board](docs/images/agile-kanban.png)
+![Agile Project - Kanban Board](docs/images/kanban.png)
 *[Project Path - Kanban Board](https://github.com/users/houndhunger/projects/4)*
 
 For efficient project management, a **Kanban Board** is used to track progress, manage tasks, and ensure the project stays on schedule.
@@ -65,23 +120,21 @@ The Kanban board includes the following columns:
 - **In Progress**: Tasks currently being worked on.
 - **Done**: Completed tasks.
 
-### Category Labels
+### Labels for the Tasks
+- **Category Labels**
+  - **Cat.: Content Discovery & Feed**: Tasks related to content discovery features, such as search and feed algorithms.
+  - **Cat.: Interaction & Engagement**: Tasks that enhance user interaction and engagement, like comments or likes.
+  - **Cat.: Navigation & Authentication**: Tasks related to user authentication, authorization, and overall navigation experience.
+  - **Cat.: Portfolio Management**: Tasks associated with organizing, editing, and sharing portfolio projects.
+  - **Cat.: Profile & Account Settings**: Tasks for user profiles and account settings.
 
-- **Cat.: Content Discovery & Feed**: Tasks related to content discovery features, such as search and feed algorithms.
-- **Cat.: Interaction & Engagement**: Tasks that enhance user interaction and engagement, like comments or likes.
-- **Cat.: Navigation & Authentication**: Tasks related to user authentication, authorization, and overall navigation experience.
-- **Cat.: Portfolio Management**: Tasks associated with organizing, editing, and sharing portfolio projects.
-- **Cat.: Profile & Account Settings**: Tasks for user profiles and account settings.
+- **Priority Labels**
+  - **could-have**: Features that are nice to have but not essential for the project to function.
+  - **must-have**: Critical features necessary for the core functionality of the application.
+  - **should-have**: Important features that enhance usability but are not absolutely essential at launch.
 
-### Priority Labels
-
-- **could-have**: Features that are nice to have but not essential for the project to function.
-- **must-have**: Critical features necessary for the core functionality of the application.
-- **should-have**: Important features that enhance usability but are not absolutely essential at launch.
-
-### Other used Labels
-
-- **bug**: Identifies issues or bugs that need to be resolved.
+- **Other used Labels**
+  - **bug**: Identifies issues or bugs that need to be resolved.
 
 ### Sprints
 
@@ -100,7 +153,7 @@ The project is divided into **sprints** to ensure steady, incremental progress. 
 
 ### Frameworks, Libraries, and Tools
 
-#### Frontend
+#### Frontend Tech
 - **React 17**: A JavaScript library for building user interfaces.
 - **React Router DOM**: For handling client-side routing and navigation in React.
 - **React Bootstrap**: For integrating Bootstrap components in React.
@@ -109,7 +162,7 @@ The project is divided into **sprints** to ensure steady, incremental progress. 
 - **Bootstrap 4.6**: Frontend framework for responsive design and layout.
 - **Web Vitals**: For measuring and optimizing the performance of the frontend application.
 
-#### Backend
+#### Backend Tech
 - **Django 4.2**: The main web framework used to build the project.
 - **Django Rest Framework (DRF)**: Used for building and exposing the REST API.
 - **JWT (JSON Web Token)**: For managing user authentication and securing API endpoints.
@@ -117,36 +170,37 @@ The project is divided into **sprints** to ensure steady, incremental progress. 
 - **Gunicorn**: The Python WSGI HTTP server used for deployment.
 - **Whitenoise**: For serving static files in production.
 
-#### Authentication and Deployment
+### Authentication
 - **Django Allauth**: For user authentication, including registration, login, and email verification.
+
+### Deployment tools
 - **Heroku**: For hosting the live version of the application.
+- **Cloudinary**: For managing static and media files in production.
 - **Git**: Version control system for tracking changes in the project.
 - **GitHub**: For hosting the project repository.
-- **Cloudinary**: For managing static and media files in production.
 - **Google Fonts**: For custom fonts on the website.
 - **Font Awesome**: For icons used in the navigation bar and footer.
 
-#### Development Tools
+### Development Tools
 - **MSW (Mock Service Worker)**: For mocking API calls during frontend testing.
 - **Jest & React Testing Library**: For unit and integration testing of React components.
 - **ESLint**: For linting JavaScript code to maintain code quality.
-
-### Version Information
 - **Node**: 16.19.1
 - **NPM**: 8.19.3
+
+### Version Information
+- **Django**: 4.2
+- **React**: 17
+- **Node**: 16.19.1
 
 !!! UPDATE IMAGE
 ## Supported screens and browsers
 The website was developed and tested on Google Chrome. It's working correctly for Small screen sizes, like Galaxy Fold, as well as for large screens.
+
 ![Responsive design](docs/images/responsive-design.png)
-*Image was generated using this [techsini.com website](https://techsini.com/multi-mockup/index.php)
+*Image was generated using this [techsini.com website](https://techsini.com/multi-mockup/index.php)*
 
-# Installation
-
-### Prerequisites
-- Python 3.8 or later
-- Django 4.2 or later
-- PostgreSQL or another supported database
+## Installation
 
 ### Prerequisites
 - **Python 3.8** 
@@ -167,52 +221,50 @@ The website was developed and tested on Google Chrome. It's working correctly fo
 The **Project Path** application can be hosted on a web server to provide online access. It is designed for easy integration into websites or platforms, allowing users to share and showcase their portfolio projects seamlessly.
 
 ### Via Gitpod
-1. Upon starting the Gitpod online workspace,
-2. I initiated a Python web server using the command: ```"python3 manage.py runserver"```
+
+**Front End:**
+1. Start by opening the project workspace in Gitpod.
+2. Install Node.js version 16 using **nvm**:
+     ```bash
+     nvm install 16 && nvm use 16
+     ```
+3. Start the frontend development server using:
+     ```bash
+     npm start
+     ```
+4. Gitpod prompted me to open the website within its environment.
+5. After making updates and saving them on Gitpod,
+6. I refreshed the website to reflect the changes.
+
+**Back end:** 
+1. Start by opening the project workspace in Gitpod.
+2. Set up a Python web server for the backend using the command:
+   ```bash
+   python3 manage.py runserver
+   ```
 3. Gitpod prompted me to open the website within its environment.
 4. After making updates and saving them on Gitpod,
 5. I refreshed the website to reflect the changes.
 
 ### Via Heroku
-- The website repository is hosted at [Restaruant booking system repository](https://github.com/houndhunger/django-restaurant-web-and-booking/)
-- The project is deployed to Heroku and is publicly accessible. [Restaruant booknig system app](https://django-restaurant-web-and-book-565ecd4fe61b.herokuapp.com/)
+
+- **Front end**
+  - The front end repository is hosted at [Project Path - web app GitHub repository](https://github.com/houndhunger/project-path)
+  - The front end is deployed to Heroku and is publicly accessible: [Project Path - front end app](https://project-path-3995bf441bd0.herokuapp.com/)
+
+- **Back end**
+  - The back end repository is hosted at [DRF API - back end GitHub repository](https://github.com/houndhunger/drf-api)
+  - The back end is deployed to Heroku and is publicly accessible: [Project Path - DRF API - back end app](https://drf-api-dp-e6ac617a981a.herokuapp.com/)
 
 To deploy the project, follow these steps:
 
 1. Ensure that you have configured your environment variables in the Heroku dashboard.
-2. Push your code to the Heroku remote repository: ```"git push"```
+2. Push your code to the Heroku remote repository: 
+
+    ```bash
+    git push
+    ```
 3. Deploy the app on Heroku either by manually deploying through the Heroku dashboard or by enabling automatic deployment for the main branch.
-
-
-## Deployment
-
-The **Project Path** application can be hosted on a web server to provide online access. It is designed for easy integration into websites or platforms, allowing users to share and showcase their portfolio projects seamlessly.
-
-### Via Gitpod
-
-Start a **Gitpod** workspace by opening the project in Gitpod.
-
-**For the frontend:**
-   - Install Node.js version 16 using **nvm**:
-     ```bash
-     nvm install 16 && nvm use 16
-     ```
-   - Start the frontend development server using:
-     ```bash
-     npm start
-     ```
-3. Gitpod prompted me to open the website within its environment.
-4. After making updates and saving them on Gitpod,
-5. I refreshed the website to reflect the changes.
-
-**For the backend:** 
-1. Set up a Python web server for the backend using the command:
-   ```bash
-   python3 manage.py runserver
-   ```
-2. Gitpod prompted me to open the website within its environment.
-3. After making updates and saving them on Gitpod,
-4. I refreshed the website to reflect the changes.
 
 !!! KEEP UPDATING
 ##  Features
@@ -320,8 +372,9 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
   - The following ERD outlines the relationships between models in the system:
   ![ERD](docs/images/erd.png)
 
-## Back-End
+## Development Process
 
+### Back-End development
 1. **Setup**: Initialized the project with Django REST Framework.
 2. **Models, Views, Serializers**: Gradually developed resources for user profiles, posts, and comments.
 3. **Post Like Feature**: Added functionality for liking posts (PostLike model, view, and serializer).
@@ -331,8 +384,7 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
 7. **Database Setup**: Configured PostgreSQL for production and prepared settings for deployment.
 8. **Deployment**: Deployed the app to Heroku with secure production settings.
 
-## Front-End
-
+### Front-End development
 1. **API Integration**: Connected the front-end with the back-end API using Axios for HTTP requests.
 2. **Navigation Bar**: Built a responsive navigation bar (Sign In, Sign Up, Feed, and Profile).
 3. **Post Creation**: Developed the Add Post page for posting user content.
@@ -342,7 +394,6 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
 7. **User Engagement**: Highlighted a "Most Followed Profiles" section for user engagement.
 8. **User Interactions**: Integrated user interactions (like, comment, follow) with UI components.
 9. **UI Enhancements**: Enhanced the UI for notifications and interaction prompts.
-  
 
 ## User Stories  
 
@@ -395,7 +446,7 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
   - **Action:** Create a Profile page displaying user details, posts, followers, and following lists.
   - **Outcome:** Users can manage their profiles and view their activity.
 
-  | | | |
+| | | |
 | :- | :- | :-|
 |  |  |  |
 | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
@@ -405,10 +456,20 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
   - **Action:** Display a "Most Followed Profiles" section.
   - **Outcome:** Users can easily find and follow popular profiles.
 
+| | | |
+| :- | :- | :-|
+|  |  |  |
+| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
+
 - **As a user, I want to engage with posts through likes and comments:**  
   - **Problem:** Users need interactive features to show appreciation and provide feedback.  
   - **Action:** Add like and comment functionality to the Post Page and other feeds.  
   - **Outcome:** Users can interact with content effectively.  
+
+| | | |
+| :- | :- | :-|
+|  |  |  |
+| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
 - **As a user, I want to follow or unfollow profiles:**  
   - **Problem:** Users need a way to connect with or disconnect from other profiles.  
@@ -419,10 +480,6 @@ Start a **Gitpod** workspace by opening the project in Gitpod.
 | :- | :- | :-|
 |  |  |  |
 | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
-|  |  |  |
-| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
-|  |  |  |
-| ![blank](docs/images/home-page.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
 ## Bugs and Issues
 
