@@ -11,7 +11,7 @@
     - [Visual Design Choices](#visual-design-choices)
     - [Wireframes](#wireframes)
 - [Project Management - Kanban Board](#project-management---kanban-board)
-    - [Labels for the Tasks](labels-for-the-tasks)
+    - [Labels for the Tasks](#labels-for-the-tasks)
     - [Sprints](#sprints)
 - [Technologies Used](#technologies-used)
     - [Languages](#languages)
@@ -25,7 +25,7 @@
     - [Steps to Set Up](#steps-to-set-up)
 - [Deployment](#deployment)
     - [Via Gitpod](#via-gitpod)
-    - [Via Heroku](#via-Heroku)
+    - [Via Heroku](#via-heroku)
 - [Features](#features)
 - [Future Enhancements](#future-enhancements)
 - [Structure](#structure)
@@ -285,38 +285,44 @@ To deploy the project, follow these steps:
 ### React Components:
 - **Navigation Bar**
  The fully responsive navigation bar is present on all pages, providing links to Home, Menu, and other key sections like the user's Profile and Notifications. For signed-in users, the navigation bar also provides links to Create Post, Feed, Liked Posts, and Profile. The bar adapts based on whether a user is signed in or not, ensuring seamless navigation across devices.  
+
  ![Navigation bar on large screen](docs/images/components/navigation-bar-large-screen.png)
-  *Navigation bar on a large screen.*
+*Navigation bar on a large screen.*
 
  ![Navigation bar for screens less than 1200px](docs/images/components/navigation-bar-screen-lessthen1200.png)  
-  *Navigation bar for screens less than 1200px.*
+*Navigation bar for screens less than 1200px.*
 
  ![Navigation bar for screens less than 992px](docs/images/components/navigation-bar-screen-lessthen992.png)  
-  *Navigation bar for screens less than 992px.*
+   *Navigation bar for screens less than 992px.*
 
  ![Navigation bar for screens less than 768px](docs/images/components/navigation-bar-screen-lessthen768.png)  
-  *Navigation bar for screens less than 768px.*
+*Navigation bar for screens less than 768px.*
 
- ![Navigation bar with the menu open for screens less than 768px](docs/images/components/navigation-bar-screen-lessthen768-open.png)  
-  *Navigation bar with menu open for screens less than 768px.*
+![Navigation bar with the menu open for screens less than 768px](docs/images/components/navigation-bar-screen-lessthen768-open.png)  
+*Navigation bar with menu open for screens less than 768px.*
 
 - **Most Followed - Popular Profiles**
  This component displays a list of the most followed profiles, giving users easy access to popular or influential accounts within the platform.
- ![Most followed profiles component](docs/images/components/Most-followed-profiles.png)
+
+![Most followed profiles component](docs/images/components/Most-followed-profiles.png)
 
 - **Search Bar**
  The search bar, Displayed on Posts Pages, allows users to easily find content by searching for specific posts, users, or keywords. It is conveniently placed to ensure quick access to the desired content.
- ![Search bar component](docs/images/components/search-bar.png)
+
+![Search bar component](docs/images/components/search-bar.png)
 
 - **More Dropdown**
  Available on the post pages, the "More Dropdown" provides users with options to edit or delete their own posts or comments. This functionality ensures that users have control over their content.
- ![More dropdown component](docs/images/components/more-dropdown.png)
+
+![More dropdown component](docs/images/components/more-dropdown.png)
 
 - **Asset**
  A reusable component for displaying a spinner, image, or message, typically used for loading states or asset display.
+
 - **Avatar**
  A component for displaying a user's profile image, with customizable size and optional text.
- ![Avatar](docs/images/components/avatar.png)
+
+![Avatar](docs/images/components/avatar.png)
 
 ### Pages:
 - **Add Project**
@@ -335,12 +341,12 @@ To deploy the project, follow these steps:
  A page that displays notifications about recent interactions such as new likes, comments on posts, and follow activity. It keeps users informed about important actions related to their account.
  ![Notifications component](docs/images/components/notifications.png)
 
-- **Profile Page & Edit Form, Change username, Change password** 
- The profile page allows users to view and edit their information, including changing their username and updating their password. Furthermore shows the sum count of own posts, followers, following, viewing and managing own posts.
+- **"PROFILE" page & Edit Form, Change username, Change password** 
+ The "PROFILE" page allows users to view and edit their information, including changing their username and updating their password. Furthermore shows the sum count of own posts, followers, following, viewing and managing own posts.
  ![Profile 'More' dropdown menu](docs/images/components/more-dropdown-profile.png) 
     *The 'More' dropdown menu in the profile section.*
 
- ![Edit profile page layout](docs/images/components/component-edit-profile.png) 
+ ![Edit "PROFILE" page layout](docs/images/components/component-edit-profile.png) 
     *The page layout for editing a user's profile.*
 
  ![Change username page layout](docs/images/components/component-change-user-name.png) 
@@ -358,7 +364,7 @@ To deploy the project, follow these steps:
  This page appears when a user navigates to a broken or unavailable link.
  ![Not found page](docs/images/components/not-found-page.png)
 
- ### Entity-Relationship Diagram (ERD)
+### Entity-Relationship Diagram (ERD)
  - The following ERD outlines the relationships between models in the system:
  ![ERD](docs/images/erd.png)
 
@@ -381,7 +387,7 @@ To deploy the project, follow these steps:
 3. **Post Creation**: Developed the Add Post page for posting user content.
 4. **Post Details**: Created the PostPage component to display individual post details.
 5. **Home Feed**: Built the Home Feed to display posts and the Liked Posts view.
-6. **Profile Page**: Designed the Profile Page showing posts, followers, and following users.
+6. **"PROFILE" page**: Designed the "PROFILE" page showing posts, followers, and following users.
 7. **User Engagement**: Highlighted a "Most Followed Profiles" section for user engagement.
 8. **User Interactions**: Integrated user interactions (like, comment, follow) with UI components.
 9. **UI Enhancements**: Enhanced the UI for notifications and interaction prompts.
@@ -419,20 +425,20 @@ To deploy the project, follow these steps:
 
 | | | |
 | :- | :- | :- |
-| User from Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post. | By clicking the pencil icon user is forwarded to the Project Post Edit page. | Edit corresponding fields and submit Project Post with changes by clicking the save button. |
+| User from Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post. | By clicking the pencil icon user is forwarded to the Project Post Edit page. | Edit corresponding fields and "submit" Project Post with changes by clicking the save button. |
 | ![More Dropdown Options](docs/images/pages/page-projectpost-moredropdown.png) | ![Filled Add Project Page](docs/images/pages/page-addproject-filled.png) | ![Edited Project Post](docs/images/pages/page-addproject-edited.png) |
-| User on Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post. | By clicking the bin icon user is forwarded to the Home Page. |  |
+| User on Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post. | By clicking the bin icon user is forwarded to the Page previusly visited. |  |
 | ![More Dropdown Options](docs/images/pages/page-projectpost-moredropdown.png) | ![Homepage](docs/images/pages/page-homepage-frank2.png) | ![blank](docs/images/blank.png) |
 
 - **As a user, I want to view and manage my profile:**
   - **Problem:** Users need a centralized page to view and edit their personal information and posts.
-  - **Action:** Create a Profile page displaying user details, posts, followers, and following lists.
+  - **Action:** Create a "PROFILE" page displaying user details, posts, followers, and following lists.
   - **Outcome:** Users can manage their profiles and view their activity.
 
 | | | |
 | :- | :- | :- |
-| User clicks on PROFILE in Navigation Menu, which forwards user to user's Profile Page. | User on Profile Page clicks 3 dots to open More Dropdown further leading to pages. | Edit Profile Page. |
-| ![Profile Page](docs/images/pages/page-profile.png) | ![More Dropdown Options](docs/images/pages/page-profile-moredropdown.png) | ![Filled Profile Page](docs/images/pages/page-profile-filled.png) |
+| User clicks on PROFILE in Navigation Menu, which forwards user to user's "PROFILE" page. | User on "PROFILE" page clicks 3 dots to open More Dropdown further leading to pages. | Edit "PROFILE" page. |
+| !["PROFILE" page](docs/images/pages/page-profile.png) | ![More Dropdown Options](docs/images/pages/page-profile-moredropdown.png) | ![Filled "PROFILE" page](docs/images/pages/page-profile-filled.png) |
 | Change User Name Page. | Change Password page. |  |
 | ![Change Username Page](docs/images/pages/page-profile-changeusername.png) | ![Change Password Page](docs/images/pages/page-profile-changepassword.png) | ![blank](docs/images/blank.png) |
 
@@ -523,171 +529,207 @@ To deploy the project, follow these steps:
 Here are the key manual tests performed using the Project Path web interface:
 
 1. **Add a Project**
-
-    - **Test:** Create a new project with valid data.
-    - **Expected Result:** Project is added and visible in the project list.
-    - **Steps:**
-    1. Fill in the project name and description.
-    2. Click "Add Project".
-    3. Verify that the new project appears in the list.
+    - **Test:** Create a new project with valid data.
+    - **Expected Result:** Project is added and visible in the project list.
+    - **Steps:**
 
 | | | |
 | :- | :- | :- |
-| 1. click on ADD PROJECT | User loads the image by clicking on the upload icon. | User fills in the Project Title and Project Description. |
-| ![Add Project Page](docs/images/pages/page-addproject.png) | ![Add Project with Image](docs/images/pages/page-addproject-withimage.png) | ![Filled Add Project Page](docs/images/pages/page-addproject-filled.png) |
-| The user submits the project by clicking create and is forwarded to Project Post which the user just created.  |  |  |
+| 1. click on ADD PROJECT | 2. If fields are empty and the user clicks the "create" button, a warning message shows. | 3. Fill in relevant fields and "submit". |
+| ![Add Project Page](docs/images/pages/page-addproject.png) | ![Add Project with Image](docs/images/pages/page-addproject-errors.png) | ![Filled Add Project Page](docs/images/pages/page-addproject-filled.png) |
+| 4.  The user is forwarded to Project Post which was just created. |  |  |
 | ![Created Project Post](docs/images/pages/page-projectpost.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
+**Also tested in: User stories - As a user, I want to add posts to share content**
+***
+
 2. **Edit a Project**
+    - **Test:** Edit an existing project.
+    - **Expected Result:** Project details are updated successfully.
+    - **Steps:**
 
-   - **Test:** Edit an existing project.
-   - **Expected Result:** Project details are updated successfully.
-   - **Steps:**
-        1. Click "Edit" on an existing project.
-        2. Change the project name or description.
-        3. Click "Save".
-        4. Verify the project details have been updated.
+| | | |
+| :- | :- | :- |
+| 1. On the Project Post page click 3 dots to open More Dropdown and then click the pencil icon for edit. | 2. Edit corresponding fields and "submit" the Project Post with changes by clicking the save button. | 3. The user is forwarded to Project Post viewing updates. |
+| ![Project More Dropdown Options](docs/images/pages/page-projectpost-moredropdown.png) | ![Filled ADD PROJECT page](docs/images/pages/page-addproject-filled2.png) | ![Edited Project Post](docs/images/pages/page-projectpost-edited.png) |
 
+**Also tested in: User stories - As a user, I want to edit or delete my Project Post**
+***
+  
 3. **Delete a Project**
+    - **Test:** Delete a project.
+    - **Expected Result:** The Project is removed from the project list.
+    - **Steps:**
 
-   - **Test:** Delete a project.
-   - **Expected Result:** The Project is removed from the project list.
-   - **Steps:**
-     1. Click "Delete" on a project.
-     2. Confirm deletion.
-     3. Verify the project is no longer visible.
+| | | |
+| :- | :- | :- |
+| 1. On the Project Post page click 3 dots to open the More Dropdown and then click the bin icon for deletion. | 2. At the "PROFILE" page user can view that the Project post was deleted. |  |
+| ![Project More Dropdown Options](docs/images/pages/page-projectpost-moredropdown.png) | ![Comment deleted](docs/images/pages/pages-post-coment-deleted.png) | ![blank](docs/images/blank.png) |
+
+**Also tested in: User stories - As a user, I want to edit or delete my Project Post:**
+***
 
 4. **Post a Comment**
+    - **Test:** Add a comment to a project.
+    - **Expected Result:** Comment appears under the project.
+    - **Steps:**
+        1. Navigate to the project post.
+        2. Enter a comment in the comment box.
+        3. Click post.
+        4. Verify the Comment appears under the Project postt.
 
-   - **Test:** Add a comment to a project.
-   - **Expected Result:** Comment appears under the project.
-   - **Steps:**
-     1. Navigate to a project.
-     2. Enter a comment in the comment box.
-     3. Click "Post Comment".
-     4. Verify the comment appears under the project.
+**Also tested in: User stories - As a user, I want to engage with posts through likes and comments**
+***
 
 5. **Edit a Comment**
+    - **Test:** Edit an existing comment.
+    - **Expected Result:** Comment is updated successfully.
+    - **Steps:**
 
-   - **Test:** Edit an existing comment.
-   - **Expected Result:** Comment is updated successfully.
-   - **Steps:**
-     1. Hover over an existing comment.
-     2. Click "Edit".
-     3. Modify the text and save.
-     4. Verify the comment is updated.
+| | | |
+| :- | :- | :- |
+| 1. Click Comment 3 dots to open the More Dropdown and then click the pen icon for edit. | 2. A comment is edited on the Project Post page. | 3. Click "cancel" to cancel edit. |
+| ![Comment more dropdown](docs/images/pages/pages-post-coment-moredropdown.png) | ![Edit comment](docs/images/pages/pages-post-coment-editedit.png) | ![Cancel edit](docs/images/pages/pages-post-coment-editcancel.png) |
+| 4. Click Comment 3 dots to open the More Dropdown and then click the "pen" icon for edit. | 5. Edit the Comment and click save. | 6. Verify the comment is updated. |
+| ![Comment more dropdown](docs/images/pages/pages-post-coment-moredropdown.png) | ![Edit comment](docs/images/pages/pages-post-coment-editedit.png) | ![Save edit](docs/images/pages/pages-post-coment-editsave.png) |
+
 
 6. **Delete a Comment**
+    - **Test:** Remove a comment from a project.
+    - **Expected Result:** Comment is removed.
+    - **Steps:**
 
-   - **Test:** Remove a comment from a project.
-   - **Expected Result:** Comment is removed.
-   - **Steps:**
-     1. Hover over a comment.
-     2. Click "Delete".
-     3. Confirm deletion.
-     4. Verify the comment is no longer visible.
+| | | |
+| :- | :- | :- |
+| 1. Click Comment 3 dots to open the More Dropdown and then click the bin icon for delete. | 2. Verify the comment is no longer visible. |  |
+| ![Comment more dropdown](docs/images/pages/pages-post-coment-moredropdown.png) | ![Edit comment](docs/images/pages/pages-post-coment-editedit.png) | ![Cancel edit](docs/images/pages/pages-post-coment-editcancel.png) |
+| 4. Click Comment 3 dots to open More Dropdown and then click the pen icon for edit. | 5. Edit the Comment and click save. | 6. Verify the comment is updated. |
+| ![Comment more dropdown](docs/images/pages/pages-post-coment-moredropdown.png) | ![Edit comment](docs/images/pages/pages-post-coment-editedit.png) | ![Save edit](docs/images/pages/pages-post-coment-editsave.png) |
 
 7. **Give and Remove Like**
+    - **Test:** Like and unlike a project or comment.
+    - **Expected Result:** Like is toggled on and off successfully.
+    - **Steps:**
 
-   - **Test:** Like and unlike a project or comment.
-   - **Expected Result:** Like is toggled on and off successfully.
-   - **Steps:**
-     1. Click "Like" on a project or comment.
-     2. Verify the like count increases.
-     3. Click "Unlike" to remove the like.
-     4. Verify the like count decreases.
+| | | |
+| :- | :- | :- |
+| 1. Click heart - Like on a project post. | 2. Click heart - Unlike to remove the like. |  |
+| ![Liked Post](docs/images/pages/pages-posts-like.png) | ![Unliked Post](docs/images/pages/pages-posts-unlike.png) | ![blank](docs/images/blank.png) |
+ 
+**Also tested in: User stories - As a user, I want to engage with posts through likes and comments:**
+***
 
 8. **Follow and Unfollow a User**
+    - **Test:** Follow and unfollow a user.
+    - **Expected Result:** User's follow status is toggled successfully.
+    - **Steps:**
 
-   - **Test:** Follow and unfollow a user.
-   - **Expected Result:** User's follow status is toggled successfully.
-   - **Steps:**
-     1. Click "Follow" on a user's profile.
-     2. Verify the follow count increases.
-     3. Click "Unfollow" to remove the follow.
-     4. Verify the follow count decreases.
+| | | |
+| :- | :- | :- |
+| 1. Click "follow" on "Most followed profiles". | 2. Verify the "followers" count increases. | 3. Click "unfollow" to remove the follow. |
+| ![Follow](docs/images/pages/page-homepage-follow.png) | ![Verify follow](docs/images/pages/page-profile-follow1.png) | ![Unfollow](docs/images/pages/page-homepage-unfollow.png) |
+| 4. Verify the "followers" count decreases. |  |  |
+| ![Verify unfollow](docs/images/pages/page-profile-follow2.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
+
 
 9. **View Notifications**
+    - **Test:** View new and unread notifications.
+    - **Expected Result:** Notifications are listed and correctly marked as unread.
+    - **Steps:**
+        1. Navigate to the NOTIFICATIONS page.
 
-   - **Test:** View new and unread notifications.
-   - **Expected Result:** Notifications are listed and correctly marked as unread.
-   - **Steps:**
-     1. Navigate to the notifications page.
-     2. Verify unread notifications are listed at the top.
-     3. Verify read notifications are marked as read.
+**Also tested in: User stories - As a user, I want to be notified about users I follow and about activity on my posts**
+***
 
 10. **Read and Unread Notifications**
-
     - **Test:** Mark notifications as read or unread.
     - **Expected Result:** Notifications can be toggled between read/unread states.
     - **Steps:**
-      1. Click on a notification to mark it as read.
-      2. Verify the notification is marked as read.
-      3. Click on a read notification to mark it as unread.
-      4. Verify the notification is marked as unread.
+        1. Click on a notification to mark it as read.
+        2. Click on a read notification to mark it as unread.
+
+**Also tested in: User stories - As a user, I want to be notified about users I follow and about activity on my posts**
+***
 
 11. **Delete Notifications**
-
     - **Test:** Delete a notification.
     - **Expected Result:** Notification is removed from the list.
     - **Steps:**
-      1. Click "Delete" on a notification.
-      2. Confirm deletion.
-      3. Verify the notification is no longer listed.
+        1. Click the "Delete All Read" button.
+        2. Verify the notification is no longer listed.
 
-12. **Log-in - Existing User and Log-out**
+**Also tested in: User stories - As a user, I want to be notified about users I follow and about activity on my posts**
+***
 
+12. **Sign In - Existing User and "SIGN OUT"**
     - **Test:** Log in and log out with an existing user.
     - **Expected Result:** User can log in and out successfully.
     - **Steps:**
-      1. Enter valid login credentials.
-      2. Click "Log In".
-      3. Verify redirection to the dashboard.
-      4. Click "Log Out".
-      5. Verify successful logout and redirection to the login page.
 
-13. **Sign-in - New User**
+| | | |
+| :- | :- | :- |
+| 1. Enter invalid login credentials & "Sign In". | 2. Enter valid login credentials & "Sign In". | 3. Verify redirection to the dashboard. |
+| ![Invalid Log In](docs/images/pages/page-signin-creditentials.png) | ![Valid Log In](docs/images/pages/page-signin-filled.png) | ![Home page](docs/images/pages/page-homepage-frank.png) |
+| 4. Click "SIGN OUT" & Verify successful logout and be forwarded to the Home page and change in the Navigation menu. |  |  |
+| ![Home page - SIGN OUT](docs/images/pages/page-signout.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
+13. **Sign Up - New User**
     - **Test:** Register a new user.
     - **Expected Result:** User is created and redirected to the dashboard.
     - **Steps:**
-      1. Fill in registration form with valid details.
-      2. Click "Sign Up".
-      3. Verify the user is redirected to the dashboard.
+        1. Fill in the registration form with valid details.
+        2. Click "Sign Up".
+        3. Verify the user is redirected to the dashboard.
+
+| | | |
+| :- | :- | :- |
+| 1. Enter a username that exists & "Sign In". | 2. Enter a short password & "Sign In". | 3. Fill in the registration form with valid details & "Sign In". |
+| ![Sign Up user exists](docs/images/pages/page-signup-userexists.png) | ![Password short & common](docs/images/pages/page-signup-shortandcommon.png) | ![Sign In Page](docs/images/pages/page-signin-filled.png) |
+| 4. Click "SIGN OUT" & Verify successful logout and redirect to the Sign In page. |  |  |
+| ![Home Page - Signed In](docs/images/pages/page-homepage-frank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
+
 
 14. **View and Edit Profile**
-
     - **Test:** View and edit user profile.
     - **Expected Result:** User profile can be viewed and edited successfully.
     - **Steps:**
-      1. Navigate to the profile page.
-      2. Edit the profile details (e.g., name, bio).
-      3. Click "Save Changes".
-      4. Verify the updated details appear on the profile.
+        1. Navigate to the "PROFILE" page.
+        2. Edit the profile details by clicking 3 dots to open More Dropdown and then clicking "edit profile".
+        3. Change the image or Bio.
+        4. Click save.
+        5. Verify the updated details appear on the profile.
+
+**Also tested in: User stories - As a user, I want to view and manage my profile:**
+***
 
 15. **Change Username**
+ - **Test:** Change the username.
+ - **Expected Result:** Username is updated successfully.
+ - **Steps:**
+ 1. Navigate to the "PROFILE" page - 3 dots - "edit profile".
+ 2. Change the username. & click "save".
+ 3. Verify the username is updated on the profile.
 
-    - **Test:** Change the username.
-    - **Expected Result:** Username is updated successfully.
-    - **Steps:**
-      1. Navigate to the profile edit page.
-      2. Change the username.
-      3. Click "Save Changes".
-      4. Verify the username is updated on the profile.
+| | | |
+| :- | :- | :- |
+| 1. Navigate to the "PROFILE" page - 3 dots - "change user name".  | 2.  Fill invalid username - with the space. | 3. Fill valid username and "save". |
+| ![Change username](docs/images/pages/page-profile-changeusername2.png) | ![Change username error](docs/images/pages/page-profile-changeusername-error.png) | ![Change username valid](docs/images/pages/page-profile-changeusernameaftererror.png) |
+| 4. Verify change was successful by being forwarded to the "PROFILE" page. |  |  |
+| ![PROFILE page - new username](docs/images/pages/page-profile-changeusername-sucess.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
 16. **Change Password**
     - **Test:** Change the user password.
     - **Expected Result:** Password is updated successfully.
     - **Steps:**
-      1. Navigate to the password change page.
-      2. Enter the current password, and new password, and confirm the new password.
-      3. Click "Change Password".
-      4. Verify successful password update.
 
-| | | | |
-| :- | :- | :- | :- |
-| 1. Log in to the system. | 2. Navigate to "Make a Reservation". | 3. Fill in reservation details (date & time, guest count, note, preferences). | 4. Submit and check if the reservation is successfully saved. |
-| ![Sign In](docs/images/sign-in-page.png) | ![Make reservation](docs/images/make-a-reservation-full-page.png) | ![Fill in reservation details](docs/images/make-a-reservation-full-filled-page.png) | ![My reservations](docs/images/my-reservations-page.png) |
+| | | |
+| :- | :- | :- |
+| 1. Navigate to the "PROFILE" page - 3 dots - "change password".  | 2.  Fill not matching passwords and receive a warning message. | 3. Fill in short passwords and receive a warning message. |
+| ![Change password](docs/images/pages/page-profile-changepassword.png) | ![Change username error](docs/images/pages/page-profile-changepassword-didntmatch.png) | ![Change username valid](docs/images/pages/page-profile-changepassword-tooshort.png) |
+| 4. Fill in new matching passwords & be forwarded to the "PROFILE" page.  | 5. To verify password "SIGN OUT" | 6. Enter credentials with a new password & "Sign In". |
+| ![Home page - SIGN OUT](docs/images/pages/page-profile2.png) | ![Home page - SIGN OUT](docs/images/pages/page-signout.png) | ![Valid Log In](docs/images/pages/page-signin-filled.png) |
+| 7. Verify redirection to the dashboard. |  |  |
+| ![Home page](docs/images/pages/page-homepage-frank.png) |  |  |
 
 ## Credits
 
