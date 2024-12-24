@@ -8,50 +8,50 @@
 - [Curriculum](#curriculum)
 - [Purpose of the Project](#purpose-of-the-project)
 - [UX Design and Visual Decisions](#ux-design-and-visual-decisions)
-  - [Visual Design Choices](#visual-design-choices)
-    - [Fonts](#fonts)
-    - [Colors](#colors)
-    - [Button Colors](#button-colors)
-    - [Button Styles](#button-styles)
-    - [Additional Design Elements](#additional-design-elements)
-  - [Wireframes](#wireframes)
+  - [Visual Design Choices](#visual-design-choices)
+    - [Fonts](#fonts)
+    - [Colors](#colors)
+    - [Button Colors](#button-colors)
+    - [Button Styles](#button-styles)
+    - [Additional Design Elements](#additional-design-elements)
+  - [Wireframes](#wireframes)
 - [Project Management - Kanban Board](#project-management---kanban-board)
-  - [Labels for the Tasks](labels-for-the-tasks)
-  - [Sprints](#sprints)
+  - [Labels for the Tasks](labels-for-the-tasks)
+  - [Sprints](#sprints)
 - [Technologies Used](#technologies-used)
-  - [Languages](#languages)
-  - [Frameworks, Libraries, and Tools](#frameworks-libraries-and-tools)
-    - [Frontend Technologies](#frontend-tech)
-    - [Backend Technologies](#backend-tech)
-  - [Authentication](#authentication)
-  - [Deployment Tools](#deployment-tools)
-  - [Development Tools](#development-tools)
-  - [Version Information](#version-information)
+  - [Languages](#languages)
+  - [Frameworks, Libraries, and Tools](#frameworks-libraries-and-tools)
+    - [Frontend Technologies](#frontend-tech)
+    - [Backend Technologies](#backend-tech)
+  - [Authentication](#authentication)
+  - [Deployment Tools](#deployment-tools)
+  - [Development Tools](#development-tools)
+  - [Version Information](#version-information)
 - [Supported screens and browsers](#supported-screens-and-browsers)
 - [Installation](#installation)
-  - [Steps to Set Up](#steps-to-set-up)
+  - [Steps to Set Up](#steps-to-set-up)
 - [Deployment](#deployment)
-  - [Via Gitpod](#via-gitpod)
-  - [Via Heroku](#via-Heroku)
+  - [Via Gitpod](#via-gitpod)
+  - [Via Heroku](#via-Heroku)
 - [Features](#features)
 - [Future Enhancements](#future-enhancements)
 - [Structure](#structure)
-  - [React Components](#react-components)
-  - [Pages](#pages)
-  - [Entity-Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
+  - [React Components](#react-components)
+  - [Pages](#pages)
+  - [Entity-Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
 - [Development Process](#development-process)
-  - [Back-End development](#back-end-development)
-  - [Front-End development](#front-end-development)
+  - [Back-End development](#back-end-development)
+  - [Front-End development](#front-end-development)
 - [User Stories](#user-stories)
 - [Bugs and Issues](#bugs-and-issues)
-  - [Solved Bugs](#solved-bugs)
-  - [Unsolved Bugs](#unsolved-bugs)
+  - [Solved Bugs](#solved-bugs)
+  - [Unsolved Bugs](#unsolved-bugs)
 - [Testing](#testing)
-  - [Code validation](#code-validation)
-    - [Front end](#front-end)
-    - [Back end](#back-end)
-  - [Test Cases](#test-cases)
-    - [Manual Testing](#manual-testing)
+  - [Code validation](#code-validation)
+    - [Front end](#front-end)
+    - [Back end](#back-end)
+  - [Test Cases](#test-cases)
+    - [Manual Testing](#manual-testing)
 
 ## Curriculum
 
@@ -59,7 +59,7 @@ The Social Platform for Architectural Inspiration and Collaboration
 
 ## Purpose of the Project
 
-Project Path is a Full-Stack web application designed to help users showcase and share their portfolio projects. It provides an intuitive platform where users can create, organize, and manage their projects, leveraging a React frontend for an engaging user experience and a REST API backend for reliable functionality. The application enables seamless project sharing, collaboration, and visibility for personal and professional growth.
+Project Path is a Full-Stack web application designed to help users showcase and share their portfolio projects. It provides an intuitive platform where users can create, organize, and manage their projects. The application leverages a React frontend for an engaging user experience and a REST API backend for reliable functionality. It enables seamless project sharing, collaboration, and visibility for personal and professional growth.
 
 ## UX Design and Visual Decisions
 
@@ -73,7 +73,7 @@ The following design decisions were made to ensure a clean, modern, and architec
 - **Navigation Font**: *Quicksand* – Friendly yet contemporary feel, maintaining legibility in the navigation menu.
 
 #### **Colors**
-The color palette was chosen to give a minimalist and architectural feel with subtle contrasts:
+The colour palette was chosen to give a minimalist and architectural feel with subtle contrasts:
 
 - **Background Color**: #FFFFFF (White) – Clean and minimal.
 - **Text Color**: #000000 (Black) – High contrast for readability.
@@ -85,7 +85,7 @@ The color palette was chosen to give a minimalist and architectural feel with su
 - **Delete Button**: Default **#7A5C5A** (Muted Burgundy), Hover **#dddddd** (Light Grey).
 
 #### **Button Styles**
-Simple, rounded buttons with neutral or accent colors for various actions, providing clear feedback on hover and active states.
+Simple, rounded buttons with neutral or accent colours for various actions, providing clear feedback on hover and active states.
 
 #### **Additional Design Elements**
 - **Box Shadows**: Subtle shadows are applied to containers, and the navbar to create depth. The navbar has a heavier shadow to stand out.
@@ -94,17 +94,17 @@ Simple, rounded buttons with neutral or accent colors for various actions, provi
 - **Container Background**: Containers and the navbar have a soft background color of **#f8f8f8**, contributing to a light and minimal aesthetic.
 
 ### Wireframes
-Wireframes were created to ensure the user interface is intuitive, clean, and architecturally cohesive. The wireframes outline the layout and visual hierarchy of key pages such as the Dashboard and Login pages.
+Wireframes were created to ensure the user interface is intuitive, clean, and architecturally cohesive. They outline the layout and visual hierarchy of key pages, such as the Dashboard and Login pages.
 
 **Key Wireframe Screens:**
 
-![Dashboard wireframe showing key navigation and user profile](docs/images/wireframes/wireframe-home-page-feed.png)  
+![Dashboard wireframe showing key navigation and user profile](docs/images/wireframes/wireframe-home-page-feed.png)  
 *-**Dashboard**: Displays key navigation items, actions, and user profile.*
 
-![Login page wireframe with input fields for email and password](docs/images/wireframes/wireframe-signin.png)  
+![Login page wireframe with input fields for email and password](docs/images/wireframes/wireframe-signin.png)  
 *-**Login Page**: Simple form layout with essential input fields for authentication.*
 
-![Notifications wireframe with options to mark as read or delete](docs/images/wireframes/wireframe-notifications.png)  
+![Notifications wireframe with options to mark as read or delete](docs/images/wireframes/wireframe-notifications.png)  
 *-**Notifications**: List of notifications with read control and deletion.*
 
 ## Project Management - Kanban Board
@@ -116,25 +116,25 @@ For efficient project management, a **Kanban Board** is used to track progress, 
 
 The Kanban board includes the following columns:
 - **Backlog**: Tasks that are yet to be planned or prioritized.
-- **To Do**: Tasks that are planned but not yet started.
+- **To Do**: Tasks that are planned but have not yet been started.
 - **In Progress**: Tasks currently being worked on.
 - **Done**: Completed tasks.
 
 ### Labels for the Tasks
 - **Category Labels**
-  - **Cat.: Content Discovery & Feed**: Tasks related to content discovery features, such as search and feed algorithms.
-  - **Cat.: Interaction & Engagement**: Tasks that enhance user interaction and engagement, like comments or likes.
-  - **Cat.: Navigation & Authentication**: Tasks related to user authentication, authorization, and overall navigation experience.
-  - **Cat.: Portfolio Management**: Tasks associated with organizing, editing, and sharing portfolio projects.
-  - **Cat.: Profile & Account Settings**: Tasks for user profiles and account settings.
+  - **Cat.: Content Discovery & Feed**: Tasks related to content discovery features, such as search and feed algorithms.
+  - **Cat.: Interaction & Engagement**: Tasks that enhance user interaction and engagement, like comments or likes.
+  - **Cat.: Navigation & Authentication**: Tasks related to user authentication, authorization, and overall navigation experience.
+  - **Cat.: Portfolio Management**: Tasks associated with organizing, editing, and sharing portfolio projects.
+  - **Cat.: Profile & Account Settings**: Tasks for user profiles and account settings.
 
 - **Priority Labels**
-  - **could-have**: Features that are nice to have but not essential for the project to function.
-  - **must-have**: Critical features necessary for the core functionality of the application.
-  - **should-have**: Important features that enhance usability but are not absolutely essential at launch.
+  - **could-have**: Features that are nice to have but not essential for the project to function.
+  - **must-have**: Critical features necessary for the core functionality of the application.
+  - **should-have**: Important features that enhance usability but are not essential at launch.
 
 - **Other used Labels**
-  - **bug**: Identifies issues or bugs that need to be resolved.
+  - **bug**: Identifies issues or bugs that need to be resolved.
 
 ### Sprints
 
@@ -193,7 +193,6 @@ The project is divided into **sprints** to ensure steady, incremental progress. 
 - **React**: 17
 - **Node**: 16.19.1
 
-!!! UPDATE IMAGE
 ## Supported screens and browsers
 The website was developed and tested on Google Chrome. It's working correctly for Small screen sizes, like Galaxy Fold, as well as for large screens.
 
@@ -212,9 +211,9 @@ The website was developed and tested on Google Chrome. It's working correctly fo
 
 ### Steps to Set Up
 - **Clone the Repository**
- ```bash```
-  git clone https://github.com/houndhunger/django-restaurant-web-and-booking.git
-  cd django-restaurant-web-and-booking
+ ```bash```
+ git clone https://github.com/houndhunger/django-restaurant-web-and-booking.git
+ cd django-restaurant-web-and-booking
 
 ## Deployment
 
@@ -225,13 +224,13 @@ The **Project Path** application can be hosted on a web server to provide online
 **Front End:**
 1. Start by opening the project workspace in Gitpod.
 2. Install Node.js version 16 using **nvm**:
-     ```bash
-     nvm install 16 && nvm use 16
-     ```
+ ```bash
+     nvm install 16 && nvm use 16
+ ```
 3. Start the frontend development server using:
-     ```bash
-     npm start
-     ```
+ ```bash
+     npm start
+ ```
 4. Gitpod prompted me to open the website within its environment.
 5. After making updates and saving them on Gitpod,
 6. I refreshed the website to reflect the changes.
@@ -239,9 +238,9 @@ The **Project Path** application can be hosted on a web server to provide online
 **Back end:** 
 1. Start by opening the project workspace in Gitpod.
 2. Set up a Python web server for the backend using the command:
-   ```bash
-   python3 manage.py runserver
-   ```
+ ```bash
+   python3 manage.py runserver
+ ```
 3. Gitpod prompted me to open the website within its environment.
 4. After making updates and saving them on Gitpod,
 5. I refreshed the website to reflect the changes.
@@ -249,128 +248,130 @@ The **Project Path** application can be hosted on a web server to provide online
 ### Via Heroku
 
 - **Front end**
-  - The front end repository is hosted at [Project Path - web app GitHub repository](https://github.com/houndhunger/project-path)
-  - The front end is deployed to Heroku and is publicly accessible: [Project Path - front end app](https://project-path-3995bf441bd0.herokuapp.com/)
+  - The front-end repository is hosted at [Project Path - web app GitHub repository](https://github.com/houndhunger/project-path)
+  - The front end is deployed to Heroku and is publicly accessible: [Project Path - front end app](https://project-path-3995bf441bd0.herokuapp.com/)
 
 - **Back end**
-  - The back end repository is hosted at [DRF API - back end GitHub repository](https://github.com/houndhunger/drf-api)
-  - The back end is deployed to Heroku and is publicly accessible: [Project Path - DRF API - back end app](https://drf-api-dp-e6ac617a981a.herokuapp.com/)
+  - The back-end repository is hosted at [DRF API - back-end GitHub repository](https://github.com/houndhunger/drf-api)
+  - The back end is deployed to Heroku and is publicly accessible: [Project Path - DRF API - back end app](https://drf-api-dp-e6ac617a981a.herokuapp.com/)
 
 To deploy the project, follow these steps:
 
 1. Ensure that you have configured your environment variables in the Heroku dashboard.
 2. Push your code to the Heroku remote repository: 
 
-    ```bash
-    git push
-    ```
+ ```bash
+    git push
+ ```
 3. Deploy the app on Heroku either by manually deploying through the Heroku dashboard or by enabling automatic deployment for the main branch.
 
 !!! KEEP UPDATING
-##  Features
+##  Features
 
-- **Create & Edit Project Post**: Users can create and edit a project post, including essential details like title, description, title image & gallery.  
-- **View Project Posts**: Users can browse through different project posts, view project details, and explore images uploaded by others.
-- **Search for Projects & Users**: Users can search for projects by title, description or user name easily find content related to their interests.  
-- **Like a Project Post**: Users can like a project post to show appreciation and support for the content.  
-- **Comment on Project Post**: Users can leave comments on project posts to engage with others and provide feedback.  
-- **Follow/Unfollow Users**: Users can follow other users to receive updates on their new project posts, and unfollow them when desired.  
-- **Edit Profile**: Users can update their profile information such as name, user image and password.  
-- **Authentication**: Users can sign up, sign in, and maintain their session.  
-- **Password Management**: Users can update their passwords securely, with success or failure notifications displayed.  
-- **Notifications System**: Users are notified about important activities such as project updates, comments, given likes to their project posts or when they are followed.
+- **Create & Edit Project Post:** Users can create and edit a project post, including essential details like title, description, title image & gallery.  
+- **View Project Posts:** Users can browse through different project posts, view project details, and explore images uploaded by others.
+- **Search for Projects & Users:** Users can search for projects by title, description or user name to easily find content related to their interests.  
+- **Like a Project Post**: Users can like a project post to show appreciation and support for the content.  
+- **Comment on Project Post:** Users can leave comments on project posts to engage with others and provide feedback.  
+- **Follow/Unfollow Users:** Users can follow other users to receive updates on their new project posts, and unfollow them when desired.  
+- **Edit Profile**: Users can update their profile information such as name, user image and password.  
+- **Authentication:** Users can sign up, sign in, and maintain their session.  
+- **Password Management:** Users can update their passwords securely, with success or failure notifications displayed.  
+- **Notifications System:** Users are notified about important activities such as project updates, comments, given likes to their project posts or when they are followed.
 
 ## Future Enhancements
 
-- **Image Gallery for Projects**: Users can upload multiple images to a project post, offering a richer visual representation.
-- **Email Notification**: Users will receive email notifications about key updates.
+- **Image Gallery for Projects:** Users can upload multiple images to a project post, offering a richer visual representation.
+- **Email Notification:** Users will receive email notifications about key updates.
 - **User Messages**: Users will be able to send and receive direct messages to communicate privately with others. This will foster more personal interactions and collaboration between users.
-- **Project Revisions**: Users can track and manage different versions or revisions of their project posts, ensuring that all changes are logged and can be viewed by other users. This feature is helpful for users who make frequent updates to their projects.
-- **Tagging Projects**: Users can tag their project posts with relevant keywords to help others find similar content.
-- **Project Bookmarking**: Users will be able to bookmark projects they are interested in for easy access later.
-- **Cross-platform Integration**: The platform will support integration with other project management tools and social media platforms to increase visibility and engagement for project posts.
+- **Comment on Comment & Notify:** Users will be able to reply to specific comments, creating threaded discussions. Additionally, notifications will alert users when someone replies to their comment, enhancing interaction and engagement.
+- **Project Revisions:** Users can track and manage different versions or revisions of their project posts, ensuring that all changes are logged and can be viewed by other users. This feature is helpful for users who make frequent updates to their projects.
+- **Tagging Projects:** Users can tag their project posts with relevant keywords to help others find similar content.
+- **Project Bookmarking:** Users will be able to bookmark projects they are interested in for easy access later.
+- **Cross-platform Integration:** The platform will support integration with other project management tools and social media platforms to increase visibility and engagement for project posts.
 
 ## Structure
 
 ### React Components:
-- **Navigation Bar**  
-    The fully responsive navigation bar is present on all pages, providing links to Home, Menu, and other key sections like the user's Profile and Notifications. For signed-in users, the navigation bar also provides links to Create Post, Feed, Liked Posts, and Profile. The bar adapts based on whether a user is signed in or not, ensuring seamless navigation across devices.  
-  ![Navigation bar on large screen](docs/images/components/navigation-bar-large-screen.png)  
-  *Navigation bar on a large screen.*
+- **Navigation Bar**  
+ The fully responsive navigation bar is present on all pages, providing links to Home, Menu, and other key sections like the user's Profile and Notifications. For signed-in users, the navigation bar also provides links to Create Post, Feed, Liked Posts, and Profile. The bar adapts based on whether a user is signed in or not, ensuring seamless navigation across devices.  
+ ![Navigation bar on large screen](docs/images/components/navigation-bar-large-screen.png)  
+  *Navigation bar on a large screen.*
 
-  ![Navigation bar for screens less than 1200px](docs/images/components/navigation-bar-screen-lessthen1200.png)  
-  *Navigation bar for screens less than 1200px.*
+ ![Navigation bar for screens less than 1200px](docs/images/components/navigation-bar-screen-lessthen1200.png)  
+  *Navigation bar for screens less than 1200px.*
 
-  ![Navigation bar for screens less than 992px](docs/images/components/navigation-bar-screen-lessthen992.png)  
-  *Navigation bar for screens less than 992px.*
+ ![Navigation bar for screens less than 992px](docs/images/components/navigation-bar-screen-lessthen992.png)  
+  *Navigation bar for screens less than 992px.*
 
-  ![Navigation bar for screens less than 768px](docs/images/components/navigation-bar-screen-lessthen768.png)  
-  *Navigation bar for screens less than 768px.*
+ ![Navigation bar for screens less than 768px](docs/images/components/navigation-bar-screen-lessthen768.png)  
+  *Navigation bar for screens less than 768px.*
 
-  ![Navigation bar with menu open for screens less than 768px](docs/images/components/navigation-bar-screen-lessthen768-open.png)  
-  *Navigation bar with menu open for screens less than 768px.*
+ ![Navigation bar with the menu open for screens less than 768px](docs/images/components/navigation-bar-screen-lessthen768-open.png)  
+  *Navigation bar with menu open for screens less than 768px.*
 
-- **Most Followed - Popular Profiles**  
-    This component displays a list of the most followed profiles, giving users easy access to popular or influential accounts within the platform.
-    ![Most followed profiles component](docs/images/components/Most-followed-profiles.png)
+- **Most Followed - Popular Profiles**  
+ This component displays a list of the most followed profiles, giving users easy access to popular or influential accounts within the platform.
+ ![Most followed profiles component](docs/images/components/Most-followed-profiles.png)
 
-- **Search Bar**  
-    The search bar, Displayed in Posts Pages, allows users to easily find content by searching for specific posts, users, or keywords. It is conveniently placed to ensure quick access to the desired content.
-    ![Search bar component](docs/images/components/search-bar.png)
+- **Search Bar**  
+ The search bar, Displayed on Posts Pages, allows users to easily find content by searching for specific posts, users, or keywords. It is conveniently placed to ensure quick access to the desired content.
+ ![Search bar component](docs/images/components/search-bar.png)
 
-- **More Dropdown**  
-    Available on the post pages, the "More Dropdown" provides users with options to edit or delete their own posts or comments. This functionality ensures that users have control over their content.
-    ![More dropdown component](docs/images/components/more-dropdown.png)
+- **More Dropdown**  
+ Available on the post pages, the "More Dropdown" provides users with options to edit or delete their own posts or comments. This functionality ensures that users have control over their content.
+ ![More dropdown component](docs/images/components/more-dropdown.png)
 
 - **Asset**
-    A reusable component for displaying a spinner, image, or message, typically used for loading states or asset display.
+ A reusable component for displaying a spinner, image, or message, typically used for loading states or asset display.
 - **Avatar**
-    A component for displaying a user's profile image, with customizable size and optional text.
-    ![Avatar](docs/images/components/avatar.png)
+ A component for displaying a user's profile image, with customizable size and optional text.
+ ![Avatar](docs/images/components/avatar.png)
 
 ### Pages:
-- **Add Project**  
-    A page dedicated to adding new posts or editing existing ones. Users can input title, description, add image, and make necessary changes to previously created content.
-    ![Add Project component](docs/images/components/add-project.png)
+- **Add Project**  
+ A page dedicated to adding new posts or editing existing ones. Users can input title, description, and image and make necessary changes to previously created content.
+ ![Add Project component](docs/images/components/add-project.png)
 
-- **Post Page & Edit Form**  
-    A dedicated page for viewing individual posts. Users can add or edit their posts, comment, like, and interact with the post content.
+- **Post Page & Edit Form**  
+ A dedicated page for viewing individual posts. Users can add or edit their posts, comment, like, and interact with the post content.
 !!! ADD IMAGE here
 
-- **Posts - Home, Feed, and Liked**  
-    The **Home** page displays an overview of the most recent posts and serves as the main landing page for content discovery. The **Feed** page showcases posts from followed users in a dynamic feed, allowing users to see updates in real-time, interact with posts, and engage with the community. The **Liked** page provides a dedicated space for viewing all posts the user has liked, offering easy access to content they have shown interest in.
+- **Posts - Home, Feed, and Liked**  
+ The **Home** page displays an overview of the most recent posts and serves as the main landing page for content discovery. The **Feed** page showcases posts from followed users in a dynamic feed, allowing users to see updates in real time, interact with posts, and engage with the community. The **Liked** page provides a dedicated space for viewing all posts the user has liked, offering easy access to the content they have shown interest in.
 !!! ADD IMAGE here
 
-- **Notifications**  
-    A page that displays notifications about recent interactions such as new likes, comments on posts, and follow activity. It keeps users informed about important actions related to their account.
-    ![Notifications component](docs/images/components/notifications.png)
+- **Notifications**  
+ A page that displays notifications about recent interactions such as new likes, comments on posts, and follow activity. It keeps users informed about important actions related to their account.
+ ![Notifications component](docs/images/components/notifications.png)
 
-- **Profile Page & Edit Form, Change username, Chage password**  
-    The profile page allows users to view and edit their information, including changing their username and updating their password. Furthermore shows sum count of own posts, followers, following, viewing and managing own posts.
-    ![Profile 'More' dropdown menu](docs/images/components/more-dropdown-profile.png)  
-    *The 'More' dropdown menu in the profile section.*
+- **Profile Page & Edit Form, Change username, Change password**  
+ The profile page allows users to view and edit their information, including changing their username and updating their password. Furthermore shows the sum count of own posts, followers, following, viewing and managing own posts.
+ ![Profile 'More' dropdown menu](docs/images/components/more-dropdown-profile.png)  
+    *The 'More' dropdown menu in the profile section.*
 
-    ![Edit profile page layout](docs/images/component/component-edit-profile.png)  
-    *The page layout for editing a user's profile.*
+ ![Edit profile page layout](docs/images/component/component-edit-profile.png)  
+    *The page layout for editing a user's profile.*
 
-    ![Change username page layout](docs/images/component/component-change-user-name.png)  
-    *The page layout for changing a user's username.*
+ ![Change username page layout](docs/images/component/component-change-user-name.png)  
+    *The page layout for changing a user's username.*
 
-    ![Change password page layout](docs/images/component/component-change-password.png)  
-    *The page layout for changing a user's password.*
+ ![Change password page layout](docs/images/component/component-change-password.png)  
+    *The page layout for changing a user's password.*
 
-- **SignIn & SiugUp Pages**  
-    The Sign In and Sign Up pages allow users to authenticate their accounts by logging in or creating a new account. These pages facilitate seamless access to the platform's features, ensuring secure and efficient user onboarding.
-    ![Sign in page](docs/images/pages/page-signin.png)
-    ![Sign up page](docs/images/pages/page-signup.png)
+- **SignIn & SiugUp Pages**  
+ The Sign In and Sign Up pages allow users to authenticate their accounts by logging in or creating a new account. These pages facilitate seamless access to the platform's features, ensuring secure and efficient user onboarding.
+ ![Sign in page](docs/images/pages/page-signin.png)
+ ![Sign up page](docs/images/pages/page-signup.png)
 
-- **Not Found Page**  
-    This page appears when a user navigates to a broken or unavailable link.
-    ![Not found page](docs/images/components/not-found-page.png)
+- **Not Found Page**  
+ This page appears when a user navigates to a broken or unavailable link.
+ ![Not found page](docs/images/components/not-found-page.png)
 
  ### Entity-Relationship Diagram (ERD)
-  - The following ERD outlines the relationships between models in the system:
-  ![ERD](docs/images/erd.png)
+ - The following ERD outlines the relationships between models in the system:
+ ![ERD](docs/images/erd.png)
+
 
 ## Development Process
 
@@ -381,7 +382,7 @@ To deploy the project, follow these steps:
 4. **Followers Feature**: Implemented a follow feature (Follow model, view, and serializer).
 5. **Notifications**: Integrated notifications for likes and follows (Notification model and view).
 6. **API Filtering**: Introduced API filtering for optimized querying.
-7. **Database Setup**: Configured PostgreSQL for production and prepared settings for deployment.
+7. **Database Setup**: Configured PostgreSQL for production and prepared deployment settings.
 8. **Deployment**: Deployed the app to Heroku with secure production settings.
 
 ### Front-End development
@@ -395,123 +396,117 @@ To deploy the project, follow these steps:
 8. **User Interactions**: Integrated user interactions (like, comment, follow) with UI components.
 9. **UI Enhancements**: Enhanced the UI for notifications and interaction prompts.
 
-## User Stories  
+## User Stories  
 
 - **As a user, I want to register and sign in to access my account:**
-  - **Problem:** Users need secure access to their personalized accounts.
-  - **Action:** Implement sign-up and sign-in functionality with form validation.
-  - **Outcome:** Users can securely register and sign in to their accounts.
+  - **Problem:** Users need secure access to their personalized accounts.
+  - **Action:** Implement sign-up and sign-in functionality with form validation.
+  - **Outcome:** Users can securely register and sign in to their accounts.
 
 | | | |
-| :- | :- | :-|
-| User clicks on SIGN UP in Navigation menu, which leads user to SIGN UP page | User fills name, password and confirmation password. Then clicks Sign Up button | User will be redirected SIGN IN page |
-| ![blank](docs/images/pages/page-signup.png) | ![blank](docs/images/pages/page-signup-filled.png) | ![blank](docs/images/pages/page-signin.png) |
-| User fills name and password. Then clicks Sign In button | User will be redirected to Home page |  |
-| ![blank](docs/images/pages/page-signin-filled.png) | ![blank](docs/images/pages/page-homepage-frank.png) | ![blank](docs/images/blank.png) |
+| :- | :- | :- |
+| The user clicks on SIGN UP in the Navigation menu, which leads the user to the SIGN UP page. | User fills in name, password and confirmation password. Then click the Sign Up button. | User will be redirected SIGN IN page. |
+| ![Sign Up Page](docs/images/pages/page-signup.png) | ![Filled Signup Page](docs/images/pages/page-signup-filled.png) | ![Sign In Page](docs/images/pages/page-signin.png) |
+| User fills name and password. Then click the Sign In button. | User will be redirected to the Home page. |  |
+| ![Filled Sign In Page](docs/images/pages/page-signin-filled.png) | ![Homepage](docs/images/pages/page-homepage-frank.png) | ![blank](docs/images/blank.png) |
 
 - **As a user, I want to add posts to share content:**
-  - **Problem:** Users need a way to create posts that display on their profile and in feeds.
-  - **Action:** Develop an "Add Post" component where users can create posts with text and images.
-  - **Outcome:** Users can successfully create posts and share content.
+  - **Problem:** Users need a way to create posts that display on their profile and in feeds.
+  - **Action:** Develop an "Add Post" component where users can create posts with text and images.
+  - **Outcome:** Users can successfully create posts and share content.
 
 | | | |
-| :- | :- | :-|
-| User clicks on ADD PROJECT in Navigation menu, which forwards user to Project Post page | User loads image by clicking on upload icon | User fills Project Title and Project Description |
-| ![blank](docs/images/pages/page-addproject.png) | ![blank](docs/images/pages/page-addproject-withimage.png) | ![blank](docs/images/pages/page-addproject-filled.png) |
-| User submits project by clicking create and is forwarded to Project Post which user just created  |  |  |
-| ![blank](docs/images/pages/page-projectpost.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
+| :- | :- | :- |
+| The User clicks on ADD PROJECT in the Navigation menu, which forwards the user to the Project Post page. | User loads the image by clicking on the upload icon. | User fills in the Project Title and Project Description. |
+| ![Add Project Page](docs/images/pages/page-addproject.png) | ![Add Project with Image](docs/images/pages/page-addproject-withimage.png) | ![Filled Add Project Page](docs/images/pages/page-addproject-filled.png) |
+| The user submits the project by clicking create and is forwarded to Project Post which the user just created.  |  |  |
+| ![Created Project Post](docs/images/pages/page-projectpost.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
 - **As a user, I want to edit or delete my Project Post:**
-  - **Problem:** Users need the ability to modify or remove their posts after they are created.
-  - **Action:** Implement edit and delete functionality on each post to allow users to update or remove their content.
-  - **Outcome:** Users can easily modify or delete their posts, ensuring content remains relevant and up to date.
+  - **Problem:** Users need the ability to modify or remove their posts after they are created.
+  - **Action:** Implement edit and delete functionality on each post to allow users to update or remove their content.
+  - **Outcome:** Users can easily modify or delete their posts, ensuring content remains relevant and up to date.
 
 | | | |
-| :- | :- | :-|
-| User from Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post | By clicikng pencil icon user is forwarded to Project Post Edit page | Edit coresponding fields and submit Project Post with changes by clicking save button |
-| ![blank](docs/images/pages/page-projectpost-moredropdown.png) | ![blank](docs/images/pages/page-addproject-filled.png) | ![blank](docs/images/pages/page-addproject-edited.png) |
-| User on Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post | By clicikng bin icon user is forwarded to Home Page |  |
-| ![blank](docs/images/pages/page-projectpost-moredropdown.png) | ![blank](docs/images/pages/page-homepage-frank2.png) | ![blank](docs/images/blank.png) |
+| :- | :- | :- |
+| User from Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post. | By clicking the pencil icon user is forwarded to the Project Post Edit page. | Edit corresponding fields and submit Project Post with changes by clicking the save button. |
+| ![More Dropdown Options](docs/images/pages/page-projectpost-moredropdown.png) | ![Filled Add Project Page](docs/images/pages/page-addproject-filled.png) | ![Edited Project Post](docs/images/pages/page-addproject-edited.png) |
+| User on Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post. | By clicking the bin icon user is forwarded to the Home Page. |  |
+| ![More Dropdown Options](docs/images/pages/page-projectpost-moredropdown.png) | ![Homepage](docs/images/pages/page-homepage-frank2.png) | ![blank](docs/images/blank.png) |
 
 - **As a user, I want to view and manage my profile:**
-  - **Problem:** Users need a centralized page to view and edit their personal information and posts.
-  - **Action:** Create a Profile page displaying user details, posts, followers, and following lists.
-  - **Outcome:** Users can manage their profiles and view their activity.
+  - **Problem:** Users need a centralized page to view and edit their personal information and posts.
+  - **Action:** Create a Profile page displaying user details, posts, followers, and following lists.
+  - **Outcome:** Users can manage their profiles and view their activity.
 
 | | | |
-| :- | :- | :-|
-| User clicks on PROFILE in Navigation Menu, which forwards user to user's Profile Page | User on Profile Page clicks 3 dots to open More Dropdown further leading to pages. | Edit Profile Page |
-| ![blank](docs/images/pages/page-profile.png) | ![blank](docs/images/pages/page-profile-moredropdown.png) | ![blank](docs/images/pages/page-profile-filled.png) |
-| Change User Name Page | Change Password page |  |
-| ![blank](docs/images/pages/page-profile-changeusername.png) | ![blank](docs/images/pages/page-profile-changepassword.png) | ![blank](docs/images/blank.png) |
+| :- | :- | :- |
+| User clicks on PROFILE in Navigation Menu, which forwards user to user's Profile Page. | User on Profile Page clicks 3 dots to open More Dropdown further leading to pages. | Edit Profile Page. |
+| ![Profile Page](docs/images/pages/page-profile.png) | ![More Dropdown Options](docs/images/pages/page-profile-moredropdown.png) | ![Filled Profile Page](docs/images/pages/page-profile-filled.png) |
+| Change User Name Page. | Change Password page. |  |
+| ![Change Username Page](docs/images/pages/page-profile-changeusername.png) | ![Change Password Page](docs/images/pages/page-profile-changepassword.png) | ![blank](docs/images/blank.png) |
 
-- **As a user, I want to engage with posts through likes and comments:**  
-  - **Problem:** Users need interactive features to show appreciation and provide feedback.  
-  - **Action:** Add like and comment functionality to the Post Page and other feeds.  
-  - **Outcome:** Users can interact with content effectively.  
-
-| | | |
-| :- | :- | :-|
-| User Can find Project of interest and like it | Or unlike it |  |
-| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
-
-- **As a user, I want to follow or unfollow profiles:**  
-  - **Problem:** Users need a way to connect with or disconnect from other profiles.  
-  - **Action:** Implement follow/unfollow functionality across the site.  
-  - **Outcome:** Users can easily manage their connections. 
+- **As a user, I want to engage with posts through likes and comments:**  
+  - **Problem:** Users need interactive features to show appreciation and provide feedback.  
+  - **Action:** Add like and comment functionality to the Post Page and other feeds.  
+  - **Outcome:** Users can interact with content effectively.  
 
 | | | |
-| :- | :- | :-|
-|  |  |  |
-| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
+| :- | :- | :- |
+| User Can find a Project of interest and like it by clicking the heart icon. | Or unlike it. | Or comment by clicking on the chat bubble icon, which forwards the user to Project Post. |
+| ![Liked Post](docs/images/pages/pages-posts-like.png) | ![Unliked Post](docs/images/pages/pages-posts-unlike.png) | ![Comment Section](docs/images/pages/pages-post-coment.png) |
+| At the bottom is the Comments section which can be filled and posted by clicking the post button. | User's comment will show on the bottom of the page. |  |
+| ![Filled Comment Section](docs/images/pages/pages-post-coment-filled.png) | ![Submitted Comment](docs/images/pages/pages-post-coment-submitted.png) | ![blank](docs/images/blank.png) |
+
+- **As a user, I want to be notified about users I follow and about activity on my posts:**  
+  - **Problem:** Users are not notified about activity from profiles they follow or on their posts.  
+  - **Action:** Implement a notification system for likes, comments, and follows.  
+  - **Outcome:** Users receive timely updates about relevant activities, improving engagement.
+
+| | | |
+| :- | :- | :- |
+| User clicking on NOTIFICATIONS in Navigation Menu Views Notifications. | Unread notifications show as bold. All Notifications can be marked as read by clicking on the Mark All as Read button. | User can mark notification unread by clicking on it, or mark as read by clicking on it again |
+| ![Notifications Page](docs/images/pages/page-notifications.png) | ![Mark All as Read Button](docs/images/pages/page-notifications-markallread.png) | ![Read Some Notifications](docs/images/pages/page-notifications-readsome.png) |
+| User can delete read notifications by clicking on Delete All Read button |  |  |
+| ![Delete All Read Button](docs/images/pages/page-notifications-deleteallread.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
 ## Bugs and Issues
 
 ### Solved Bugs
 
 - **Post Like Issue**
-
-  - **Problem**: Likes were not correctly counted for posts after the first like, leading to inaccurate like counts.
-  - **Solution**: Updated the like counting logic to handle multiple likes properly on the same post.
+  - **Problem**: Likes were not correctly counted for posts after the first like leading to inaccurate like counts.
+  - **Solution**: Updated the like counting logic to handle multiple likes properly on the same post.
 
 - **Follow Feature Bug**
-
-  - **Problem**: Users were unable to unfollow others due to a database query error, which resulted in an unresponsive unfollow feature.
-  - **Solution**: Corrected the database queries to resolve the unfollow action bug.
+  - **Problem**: Users were unable to unfollow others due to a database query error, which resulted in an unresponsive unfollow feature.
+  - **Solution**: Corrected the database queries to resolve the unfollow action bug.
 
 - **Profile Display Issue**
-
-  - **Problem**: User profiles were not displaying accurate follower and following counts, causing inconsistencies in the profile view.
-  - **Solution**: Fixed the data retrieval logic to ensure the correct number of followers and following were shown.
+  - **Problem**: User profiles were not displaying accurate follower and following counts, causing inconsistencies in the profile view.
+  - **Solution**: Fixed the data retrieval logic to ensure the correct number of followers and following were shown.
 
 - **Responsive Layout Bug**
+  - **Problem**: The site layout was not responsive on mobile devices, causing elements to overlap and become difficult to navigate.
+  - **Solution**: Applied responsive design fixes to ensure that the layout adjusts properly across different screen sizes.
 
-  - **Problem**: The site layout was not responsive on mobile devices, causing elements to overlap and become difficult to navigate.
-  - **Solution**: Applied responsive design fixes to ensure that the layout adjusts properly across different screen sizes.
+- **Notification model was missing user reference**
+  - **Problem**: Only the user ID was being sent, causing the front end to lack the necessary user information to display notifications properly.
+  - **Solution**: Sent the full user object in the notification model, allowing the front end to display notifications with the correct user details.
 
-- **Image Loading Issue**
+- **Post Submission Redirection Issue**
+  - **Problem**: When a user submits a post or changes their password, the action is processed and updated, but the user is not redirected afterwards.
+  - **Solution**: The issue originated in the backend, where the `signals.py` file for notifications incorrectly called the `user` instead of the `owner`.
 
-  - **Problem**: Profile images (and potentially other images later) were not loading correctly on certain pages, resulting in broken image links.
-  - **Solution**: Fixed the image source URLs and optimized the loading process, using Cloudinary to ensure proper image display and efficient loading.
-
-- **Form Validation Bug**
-
-  - **Problem**: Front-end form validation was not triggering on some forms, causing submission errors.
-  - **Solution**: Corrected the validation script to ensure proper triggering of front-end form validation before submission.
-
-  - **Notification model was missing user reference**
-  - **Problem**: Only the user ID was being sent, causing the frontend to lack the necessary user information to display notifications properly.
-  - **Solution**: Sent the full user object in the notification model, allowing the frontend to display notifications with the correct user details.
-
-  - **Post Submission Redirection Issue**
-  - **Problem**: When a user submits a post or changes their password, the action is processed and updated, but the user is not redirected afterward.
-  - **Solution**: The issue originated in the backend, where the `signals.py` file for notifications incorrectly called the `user` instead of the `owner`.
+- **Instead of the user who commented on the post, the owner of the post was showing in Notification**  
+  - **Problem:** The backend incorrectly referenced the `owner` of the post in the `signals.py` file for notifications instead of the commenting `user`.  
+  - **Solution:** Update the `signals.py` file to correctly reference the `user` who commented when creating notifications.
 
 ### Unsolved Bugs
 
 - **Admin Styling Issue on Heroku Deployment**
-  - **Problem**: Static files, including CSS for the admin panel, were not being applied correctly after deploying the application to Heroku, causing the admin interface to appear unstyled.
-  - **Solution**: Pending investigation and update to ensure static files are properly configured and served on Heroku for correct styling in the admin panel.
+  - **Problem**: Static files, including CSS for the admin panel, were not being applied correctly after deploying the application to Heroku, causing the admin interface to appear unstyled.
+  - **Solution**: Pending investigation and update to ensure static files are properly configured and served on Heroku for correct styling in the admin panel.
 
 ## Testing
 
@@ -522,180 +517,185 @@ To deploy the project, follow these steps:
 - **CSS**: The following file has been validated and no errors were found when passing through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/).
 
 - **JavaScript - JSX**: The following file has been validated and no errors were found when passing through the [ESLint](https://eslint.org/).
-  - [static/js/flatpickr.js](https://django-restaurant-web-and-book-565ecd4fe61b.herokuapp.com/static/js/flatpickr.js)
-  - JavaScript follows the ES6+ standards with ESLint configuration enabled for the project.
-  **Back end**
+  - [static/js/flatpickr.js](https://django-restaurant-web-and-book-565ecd4fe61b.herokuapp.com/static/js/flatpickr.js)
+  - JavaScript follows the ES6+ standards with ESLint configuration enabled for the project.
+  **Back end**
 - **Python**: Code passes [pep8ci](https://pep8ci.herokuapp.com/)and [pylint](https://pypi.org/project/pylint/) validation with 100% success. Validated are following
-  - **files:** admin.py, apps.py, models.py, serializers.py, serialziers.py, signals.py, urls.py, views.py
-  - **folders:** followers, likes, notifications, posts, profiles
+  - **files:** admin.py, apps.py, models.py, serializers.py, serialziers.py, signals.py, urls.py, views.py
+  - **folders:** followers, likes, notifications, posts, profiles
 
-!!! Fill tables with images and text
+!!! Fill tables with images and text.
 
 ### Test Cases
 
 #### Manual Testing
 
-Here are the key manual tests performed on using project path web:
+Here are the key manual tests performed using the Project Path web interface:
 
 1. **Add a Project**
 
-   - **Test:** Create a new project with valid data.
-   - **Expected Result:** Project is added and visible in the project list.
-   - **Steps:**
-     1. Fill in project name and description.
-     2. Click "Add Project".
-     3. Verify that the new project appears in the list.
+   - **Test:** Create a new project with valid data.
+   - **Expected Result:** Project is added and visible in the project list.
+   - **Steps:**
+     1. Fill in the project name and description.
+     2. Click "Add Project".
+     3. Verify that the new project appears in the list.
+
+| | | | |
+| :- | :- | :- | :- |
+| 1.  | 2.  | 3.  | 4.  |
+| ![]() | ![]() | ![]() | ![blank](docs/images/blank.png) |
 
 2. **Edit a Project**
 
-   - **Test:** Edit an existing project.
-   - **Expected Result:** Project details are updated successfully.
-   - **Steps:**
-     1. Click "Edit" on an existing project.
-     2. Change the project name or description.
-     3. Click "Save".
-     4. Verify the project details have been updated.
+   - **Test:** Edit an existing project.
+   - **Expected Result:** Project details are updated successfully.
+   - **Steps:**
+     1. Click "Edit" on an existing project.
+     2. Change the project name or description.
+     3. Click "Save".
+     4. Verify the project details have been updated.
 
 3. **Delete a Project**
 
-   - **Test:** Delete a project.
-   - **Expected Result:** Project is removed from the project list.
-   - **Steps:**
-     1. Click "Delete" on a project.
-     2. Confirm deletion.
-     3. Verify the project is no longer visible.
+   - **Test:** Delete a project.
+   - **Expected Result:** The Project is removed from the project list.
+   - **Steps:**
+     1. Click "Delete" on a project.
+     2. Confirm deletion.
+     3. Verify the project is no longer visible.
 
 4. **Post a Comment**
 
-   - **Test:** Add a comment to a project.
-   - **Expected Result:** Comment appears under the project.
-   - **Steps:**
-     1. Navigate to a project.
-     2. Enter a comment in the comment box.
-     3. Click "Post Comment".
-     4. Verify the comment appears under the project.
+   - **Test:** Add a comment to a project.
+   - **Expected Result:** Comment appears under the project.
+   - **Steps:**
+     1. Navigate to a project.
+     2. Enter a comment in the comment box.
+     3. Click "Post Comment".
+     4. Verify the comment appears under the project.
 
 5. **Edit a Comment**
 
-   - **Test:** Edit an existing comment.
-   - **Expected Result:** Comment is updated successfully.
-   - **Steps:**
-     1. Hover over an existing comment.
-     2. Click "Edit".
-     3. Modify the text and save.
-     4. Verify the comment is updated.
+   - **Test:** Edit an existing comment.
+   - **Expected Result:** Comment is updated successfully.
+   - **Steps:**
+     1. Hover over an existing comment.
+     2. Click "Edit".
+     3. Modify the text and save.
+     4. Verify the comment is updated.
 
 6. **Delete a Comment**
 
-   - **Test:** Remove a comment from a project.
-   - **Expected Result:** Comment is removed.
-   - **Steps:**
-     1. Hover over a comment.
-     2. Click "Delete".
-     3. Confirm deletion.
-     4. Verify the comment is no longer visible.
+   - **Test:** Remove a comment from a project.
+   - **Expected Result:** Comment is removed.
+   - **Steps:**
+     1. Hover over a comment.
+     2. Click "Delete".
+     3. Confirm deletion.
+     4. Verify the comment is no longer visible.
 
 7. **Give and Remove Like**
 
-   - **Test:** Like and unlike a project or comment.
-   - **Expected Result:** Like is toggled on and off successfully.
-   - **Steps:**
-     1. Click "Like" on a project or comment.
-     2. Verify the like count increases.
-     3. Click "Unlike" to remove the like.
-     4. Verify the like count decreases.
+   - **Test:** Like and unlike a project or comment.
+   - **Expected Result:** Like is toggled on and off successfully.
+   - **Steps:**
+     1. Click "Like" on a project or comment.
+     2. Verify the like count increases.
+     3. Click "Unlike" to remove the like.
+     4. Verify the like count decreases.
 
 8. **Follow and Unfollow a User**
 
-   - **Test:** Follow and unfollow a user.
-   - **Expected Result:** User's follow status is toggled successfully.
-   - **Steps:**
-     1. Click "Follow" on a user's profile.
-     2. Verify the follow count increases.
-     3. Click "Unfollow" to remove the follow.
-     4. Verify the follow count decreases.
+   - **Test:** Follow and unfollow a user.
+   - **Expected Result:** User's follow status is toggled successfully.
+   - **Steps:**
+     1. Click "Follow" on a user's profile.
+     2. Verify the follow count increases.
+     3. Click "Unfollow" to remove the follow.
+     4. Verify the follow count decreases.
 
 9. **View Notifications**
 
-   - **Test:** View new and unread notifications.
-   - **Expected Result:** Notifications are listed and correctly marked as unread.
-   - **Steps:**
-     1. Navigate to the notifications page.
-     2. Verify unread notifications are listed at the top.
-     3. Verify read notifications are marked as read.
+   - **Test:** View new and unread notifications.
+   - **Expected Result:** Notifications are listed and correctly marked as unread.
+   - **Steps:**
+     1. Navigate to the notifications page.
+     2. Verify unread notifications are listed at the top.
+     3. Verify read notifications are marked as read.
 
 10. **Read and Unread Notifications**
 
-    - **Test:** Mark notifications as read or unread.
-    - **Expected Result:** Notifications can be toggled between read/unread states.
-    - **Steps:**
-      1. Click on a notification to mark it as read.
-      2. Verify the notification is marked as read.
-      3. Click on a read notification to mark it as unread.
-      4. Verify the notification is marked as unread.
+    - **Test:** Mark notifications as read or unread.
+    - **Expected Result:** Notifications can be toggled between read/unread states.
+    - **Steps:**
+      1. Click on a notification to mark it as read.
+      2. Verify the notification is marked as read.
+      3. Click on a read notification to mark it as unread.
+      4. Verify the notification is marked as unread.
 
 11. **Delete Notifications**
 
-    - **Test:** Delete a notification.
-    - **Expected Result:** Notification is removed from the list.
-    - **Steps:**
-      1. Click "Delete" on a notification.
-      2. Confirm deletion.
-      3. Verify the notification is no longer listed.
+    - **Test:** Delete a notification.
+    - **Expected Result:** Notification is removed from the list.
+    - **Steps:**
+      1. Click "Delete" on a notification.
+      2. Confirm deletion.
+      3. Verify the notification is no longer listed.
 
 12. **Log-in - Existing User and Log-out**
 
-    - **Test:** Log in and log out with an existing user.
-    - **Expected Result:** User can log in and out successfully.
-    - **Steps:**
-      1. Enter valid login credentials.
-      2. Click "Log In".
-      3. Verify redirection to the dashboard.
-      4. Click "Log Out".
-      5. Verify successful logout and redirection to the login page.
+    - **Test:** Log in and log out with an existing user.
+    - **Expected Result:** User can log in and out successfully.
+    - **Steps:**
+      1. Enter valid login credentials.
+      2. Click "Log In".
+      3. Verify redirection to the dashboard.
+      4. Click "Log Out".
+      5. Verify successful logout and redirection to the login page.
 
 13. **Sign-in - New User**
 
-    - **Test:** Register a new user.
-    - **Expected Result:** User is created and redirected to the dashboard.
-    - **Steps:**
-      1. Fill in registration form with valid details.
-      2. Click "Sign Up".
-      3. Verify user is redirected to the dashboard.
+    - **Test:** Register a new user.
+    - **Expected Result:** User is created and redirected to the dashboard.
+    - **Steps:**
+      1. Fill in registration form with valid details.
+      2. Click "Sign Up".
+      3. Verify the user is redirected to the dashboard.
 
 14. **View and Edit Profile**
 
-    - **Test:** View and edit user profile.
-    - **Expected Result:** User profile can be viewed and edited successfully.
-    - **Steps:**
-      1. Navigate to the profile page.
-      2. Edit the profile details (e.g., name, bio).
-      3. Click "Save Changes".
-      4. Verify the updated details appear on the profile.
+    - **Test:** View and edit user profile.
+    - **Expected Result:** User profile can be viewed and edited successfully.
+    - **Steps:**
+      1. Navigate to the profile page.
+      2. Edit the profile details (e.g., name, bio).
+      3. Click "Save Changes".
+      4. Verify the updated details appear on the profile.
 
 15. **Change Username**
 
-    - **Test:** Change the username.
-    - **Expected Result:** Username is updated successfully.
-    - **Steps:**
-      1. Navigate to the profile edit page.
-      2. Change the username.
-      3. Click "Save Changes".
-      4. Verify the username is updated on the profile.
+    - **Test:** Change the username.
+    - **Expected Result:** Username is updated successfully.
+    - **Steps:**
+      1. Navigate to the profile edit page.
+      2. Change the username.
+      3. Click "Save Changes".
+      4. Verify the username is updated on the profile.
 
 16. **Change Password**
-    - **Test:** Change the user password.
-    - **Expected Result:** Password is updated successfully.
-    - **Steps:**
-      1. Navigate to the password change page.
-      2. Enter the current password, new password, and confirm new password.
-      3. Click "Change Password".
-      4. Verify successful password update.
+    - **Test:** Change the user password.
+    - **Expected Result:** Password is updated successfully.
+    - **Steps:**
+      1. Navigate to the password change page.
+      2. Enter the current password, and new password, and confirm the new password.
+      3. Click "Change Password".
+      4. Verify successful password update.
 
 | | | | |
 | :- | :- | :- | :- |
 | 1. Log in to the system. | 2. Navigate to "Make a Reservation". | 3. Fill in reservation details (date & time, guest count, note, preferences). | 4. Submit and check if the reservation is successfully saved. |
-| ![Sign In](docs/images/sign-in-page.png) | ![Make reservation](docs/images/make-a-reservation-full-page.png) | ![Fill in reservation details](docs/images/make-a-reservation-full-filled-page.png) | ![My reservations](docs/images/my-reservations-page.png)      |
+| ![Sign In](docs/images/sign-in-page.png) | ![Make reservation](docs/images/make-a-reservation-full-page.png) | ![Fill in reservation details](docs/images/make-a-reservation-full-filled-page.png) | ![My reservations](docs/images/my-reservations-page.png)      |
 
 ## Credits
 
