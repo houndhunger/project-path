@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import appStyles from "../../App.module.css";
 
 function Notification({
   id,
@@ -45,9 +46,14 @@ function Notification({
           {notification_type !== "follow" && ": "}
         </span>
         {post_id && (
-          <span style={{ fontWeight: is_read ? "normal" : "bold" }}>
-            <Link to={`/posts/${post_id}`}>{postTitle}</Link>
-          </span>
+          <span
+          className={is_read ? "" : appStyles.bold}
+          style={{ fontWeight: is_read ? "normal" : "bold" }}
+        >
+          <Link to={`/posts/${post_id}`} className={appStyles.a}>
+            {postTitle}
+          </Link>
+        </span>
         )}
       </p>
     </div>

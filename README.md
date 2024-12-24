@@ -8,50 +8,40 @@
 - [Curriculum](#curriculum)
 - [Purpose of the Project](#purpose-of-the-project)
 - [UX Design and Visual Decisions](#ux-design-and-visual-decisions)
-  - [Visual Design Choices](#visual-design-choices)
-    - [Fonts](#fonts)
-    - [Colors](#colors)
-    - [Button Colors](#button-colors)
-    - [Button Styles](#button-styles)
-    - [Additional Design Elements](#additional-design-elements)
-  - [Wireframes](#wireframes)
+    - [Visual Design Choices](#visual-design-choices)
+    - [Wireframes](#wireframes)
 - [Project Management - Kanban Board](#project-management---kanban-board)
-  - [Labels for the Tasks](labels-for-the-tasks)
-  - [Sprints](#sprints)
+    - [Labels for the Tasks](labels-for-the-tasks)
+    - [Sprints](#sprints)
 - [Technologies Used](#technologies-used)
-  - [Languages](#languages)
-  - [Frameworks, Libraries, and Tools](#frameworks-libraries-and-tools)
-    - [Frontend Technologies](#frontend-tech)
-    - [Backend Technologies](#backend-tech)
-  - [Authentication](#authentication)
-  - [Deployment Tools](#deployment-tools)
-  - [Development Tools](#development-tools)
-  - [Version Information](#version-information)
+    - [Languages](#languages)
+    - [Frameworks, Libraries, and Tools](#frameworks-libraries-and-tools)
+    - [Authentication](#authentication)
+    - [Deployment Tools](#deployment-tools)
+    - [Development Tools](#development-tools)
+    - [Version Information](#version-information)
 - [Supported screens and browsers](#supported-screens-and-browsers)
 - [Installation](#installation)
-  - [Steps to Set Up](#steps-to-set-up)
+    - [Steps to Set Up](#steps-to-set-up)
 - [Deployment](#deployment)
-  - [Via Gitpod](#via-gitpod)
-  - [Via Heroku](#via-Heroku)
+    - [Via Gitpod](#via-gitpod)
+    - [Via Heroku](#via-Heroku)
 - [Features](#features)
 - [Future Enhancements](#future-enhancements)
 - [Structure](#structure)
-  - [React Components](#react-components)
-  - [Pages](#pages)
-  - [Entity-Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
+    - [React Components](#react-components)
+    - [Pages](#pages)
+    - [Entity-Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
 - [Development Process](#development-process)
-  - [Back-End development](#back-end-development)
-  - [Front-End development](#front-end-development)
+    - [Back-End development](#back-end-development)
+    - [Front-End development](#front-end-development)
 - [User Stories](#user-stories)
 - [Bugs and Issues](#bugs-and-issues)
-  - [Solved Bugs](#solved-bugs)
-  - [Unsolved Bugs](#unsolved-bugs)
+    - [Solved Bugs](#solved-bugs)
+    - [Unsolved Bugs](#unsolved-bugs)
 - [Testing](#testing)
-  - [Code validation](#code-validation)
-    - [Front end](#front-end)
-    - [Back end](#back-end)
-  - [Test Cases](#test-cases)
-    - [Manual Testing](#manual-testing)
+    - [Code validation](#code-validation)
+    - [Test Cases](#test-cases)
 
 ## Curriculum
 
@@ -266,7 +256,7 @@ To deploy the project, follow these steps:
 3. Deploy the app on Heroku either by manually deploying through the Heroku dashboard or by enabling automatic deployment for the main branch.
 
 !!! KEEP UPDATING
-##  Features
+## Features
 
 - **Create & Edit Project Post:** Users can create and edit a project post, including essential details like title, description, title image & gallery.  
 - **View Project Posts:** Users can browse through different project posts, view project details, and explore images uploaded by others.
@@ -275,7 +265,7 @@ To deploy the project, follow these steps:
 - **Comment on Project Post:** Users can leave comments on project posts to engage with others and provide feedback.  
 - **Follow/Unfollow Users:** Users can follow other users to receive updates on their new project posts, and unfollow them when desired.  
 - **Edit Profile**: Users can update their profile information such as name, user image and password.  
-- **Authentication:** Users can sign up, sign in, and maintain their session.  
+- **Authentication:** Users can sign up, sign in, and maintain their session.
 - **Password Management:** Users can update their passwords securely, with success or failure notifications displayed.  
 - **Notifications System:** Users are notified about important activities such as project updates, comments, given likes to their project posts or when they are followed.
 
@@ -293,9 +283,9 @@ To deploy the project, follow these steps:
 ## Structure
 
 ### React Components:
-- **Navigation Bar**  
+- **Navigation Bar**
  The fully responsive navigation bar is present on all pages, providing links to Home, Menu, and other key sections like the user's Profile and Notifications. For signed-in users, the navigation bar also provides links to Create Post, Feed, Liked Posts, and Profile. The bar adapts based on whether a user is signed in or not, ensuring seamless navigation across devices.  
- ![Navigation bar on large screen](docs/images/components/navigation-bar-large-screen.png)  
+ ![Navigation bar on large screen](docs/images/components/navigation-bar-large-screen.png)
   *Navigation bar on a large screen.*
 
  ![Navigation bar for screens less than 1200px](docs/images/components/navigation-bar-screen-lessthen1200.png)  
@@ -310,15 +300,15 @@ To deploy the project, follow these steps:
  ![Navigation bar with the menu open for screens less than 768px](docs/images/components/navigation-bar-screen-lessthen768-open.png)  
   *Navigation bar with menu open for screens less than 768px.*
 
-- **Most Followed - Popular Profiles**  
+- **Most Followed - Popular Profiles**
  This component displays a list of the most followed profiles, giving users easy access to popular or influential accounts within the platform.
  ![Most followed profiles component](docs/images/components/Most-followed-profiles.png)
 
-- **Search Bar**  
+- **Search Bar**
  The search bar, Displayed on Posts Pages, allows users to easily find content by searching for specific posts, users, or keywords. It is conveniently placed to ensure quick access to the desired content.
  ![Search bar component](docs/images/components/search-bar.png)
 
-- **More Dropdown**  
+- **More Dropdown**
  Available on the post pages, the "More Dropdown" provides users with options to edit or delete their own posts or comments. This functionality ensures that users have control over their content.
  ![More dropdown component](docs/images/components/more-dropdown.png)
 
@@ -329,42 +319,42 @@ To deploy the project, follow these steps:
  ![Avatar](docs/images/components/avatar.png)
 
 ### Pages:
-- **Add Project**  
+- **Add Project**
  A page dedicated to adding new posts or editing existing ones. Users can input title, description, and image and make necessary changes to previously created content.
  ![Add Project component](docs/images/components/add-project.png)
 
-- **Post Page & Edit Form**  
+- **Post Page & Edit Form**
  A dedicated page for viewing individual posts. Users can add or edit their posts, comment, like, and interact with the post content.
 !!! ADD IMAGE here
 
-- **Posts - Home, Feed, and Liked**  
+- **Posts - Home, Feed, and Liked**
  The **Home** page displays an overview of the most recent posts and serves as the main landing page for content discovery. The **Feed** page showcases posts from followed users in a dynamic feed, allowing users to see updates in real time, interact with posts, and engage with the community. The **Liked** page provides a dedicated space for viewing all posts the user has liked, offering easy access to the content they have shown interest in.
 !!! ADD IMAGE here
 
-- **Notifications**  
+- **Notifications**
  A page that displays notifications about recent interactions such as new likes, comments on posts, and follow activity. It keeps users informed about important actions related to their account.
  ![Notifications component](docs/images/components/notifications.png)
 
-- **Profile Page & Edit Form, Change username, Change password**  
+- **Profile Page & Edit Form, Change username, Change password** 
  The profile page allows users to view and edit their information, including changing their username and updating their password. Furthermore shows the sum count of own posts, followers, following, viewing and managing own posts.
- ![Profile 'More' dropdown menu](docs/images/components/more-dropdown-profile.png)  
+ ![Profile 'More' dropdown menu](docs/images/components/more-dropdown-profile.png) 
     *The 'More' dropdown menu in the profile section.*
 
- ![Edit profile page layout](docs/images/component/component-edit-profile.png)  
+ ![Edit profile page layout](docs/images/components/component-edit-profile.png) 
     *The page layout for editing a user's profile.*
 
- ![Change username page layout](docs/images/component/component-change-user-name.png)  
+ ![Change username page layout](docs/images/components/component-change-user-name.png) 
     *The page layout for changing a user's username.*
 
- ![Change password page layout](docs/images/component/component-change-password.png)  
+ ![Change password page layout](docs/images/components/component-change-password.png) 
     *The page layout for changing a user's password.*
 
-- **SignIn & SiugUp Pages**  
+- **SignIn & SiugUp Pages** 
  The Sign In and Sign Up pages allow users to authenticate their accounts by logging in or creating a new account. These pages facilitate seamless access to the platform's features, ensuring secure and efficient user onboarding.
  ![Sign in page](docs/images/pages/page-signin.png)
  ![Sign up page](docs/images/pages/page-signup.png)
 
-- **Not Found Page**  
+- **Not Found Page** 
  This page appears when a user navigates to a broken or unavailable link.
  ![Not found page](docs/images/components/not-found-page.png)
 
@@ -396,7 +386,7 @@ To deploy the project, follow these steps:
 8. **User Interactions**: Integrated user interactions (like, comment, follow) with UI components.
 9. **UI Enhancements**: Enhanced the UI for notifications and interaction prompts.
 
-## User Stories  
+## User Stories
 
 - **As a user, I want to register and sign in to access my account:**
   - **Problem:** Users need secure access to their personalized accounts.
@@ -446,10 +436,10 @@ To deploy the project, follow these steps:
 | Change User Name Page. | Change Password page. |  |
 | ![Change Username Page](docs/images/pages/page-profile-changeusername.png) | ![Change Password Page](docs/images/pages/page-profile-changepassword.png) | ![blank](docs/images/blank.png) |
 
-- **As a user, I want to engage with posts through likes and comments:**  
-  - **Problem:** Users need interactive features to show appreciation and provide feedback.  
-  - **Action:** Add like and comment functionality to the Post Page and other feeds.  
-  - **Outcome:** Users can interact with content effectively.  
+- **As a user, I want to engage with posts through likes and comments:**
+  - **Problem:** Users need interactive features to show appreciation and provide feedback.
+  - **Action:** Add like and comment functionality to the Post Page and other feeds.
+  - **Outcome:** Users can interact with content effectively.
 
 | | | |
 | :- | :- | :- |
@@ -458,9 +448,9 @@ To deploy the project, follow these steps:
 | At the bottom is the Comments section which can be filled and posted by clicking the post button. | User's comment will show on the bottom of the page. |  |
 | ![Filled Comment Section](docs/images/pages/pages-post-coment-filled.png) | ![Submitted Comment](docs/images/pages/pages-post-coment-submitted.png) | ![blank](docs/images/blank.png) |
 
-- **As a user, I want to be notified about users I follow and about activity on my posts:**  
-  - **Problem:** Users are not notified about activity from profiles they follow or on their posts.  
-  - **Action:** Implement a notification system for likes, comments, and follows.  
+- **As a user, I want to be notified about users I follow and about activity on my posts:**
+  - **Problem:** Users are not notified about activity from profiles they follow or on their posts.
+  - **Action:** Implement a notification system for likes, comments, and follows.
   - **Outcome:** Users receive timely updates about relevant activities, improving engagement.
 
 | | | |
@@ -498,8 +488,8 @@ To deploy the project, follow these steps:
   - **Problem**: When a user submits a post or changes their password, the action is processed and updated, but the user is not redirected afterwards.
   - **Solution**: The issue originated in the backend, where the `signals.py` file for notifications incorrectly called the `user` instead of the `owner`.
 
-- **Instead of the user who commented on the post, the owner of the post was showing in Notification**  
-  - **Problem:** The backend incorrectly referenced the `owner` of the post in the `signals.py` file for notifications instead of the commenting `user`.  
+- **Instead of the user who commented on the post, the owner of the post was showing in Notification**
+  - **Problem:** The backend incorrectly referenced the `owner` of the post in the `signals.py` file for notifications instead of the commenting `user`.
   - **Solution:** Update the `signals.py` file to correctly reference the `user` who commented when creating notifications.
 
 ### Unsolved Bugs
@@ -534,27 +524,29 @@ Here are the key manual tests performed using the Project Path web interface:
 
 1. **Add a Project**
 
-   - **Test:** Create a new project with valid data.
-   - **Expected Result:** Project is added and visible in the project list.
-   - **Steps:**
-     1. Fill in the project name and description.
-     2. Click "Add Project".
-     3. Verify that the new project appears in the list.
+    - **Test:** Create a new project with valid data.
+    - **Expected Result:** Project is added and visible in the project list.
+    - **Steps:**
+    1. Fill in the project name and description.
+    2. Click "Add Project".
+    3. Verify that the new project appears in the list.
 
-| | | | |
-| :- | :- | :- | :- |
-| 1.  | 2.  | 3.  | 4.  |
-| ![]() | ![]() | ![]() | ![blank](docs/images/blank.png) |
+| | | |
+| :- | :- | :- |
+| 1. click on ADD PROJECT | User loads the image by clicking on the upload icon. | User fills in the Project Title and Project Description. |
+| ![Add Project Page](docs/images/pages/page-addproject.png) | ![Add Project with Image](docs/images/pages/page-addproject-withimage.png) | ![Filled Add Project Page](docs/images/pages/page-addproject-filled.png) |
+| The user submits the project by clicking create and is forwarded to Project Post which the user just created.  |  |  |
+| ![Created Project Post](docs/images/pages/page-projectpost.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
 2. **Edit a Project**
 
    - **Test:** Edit an existing project.
    - **Expected Result:** Project details are updated successfully.
    - **Steps:**
-     1. Click "Edit" on an existing project.
-     2. Change the project name or description.
-     3. Click "Save".
-     4. Verify the project details have been updated.
+        1. Click "Edit" on an existing project.
+        2. Change the project name or description.
+        3. Click "Save".
+        4. Verify the project details have been updated.
 
 3. **Delete a Project**
 
@@ -695,7 +687,7 @@ Here are the key manual tests performed using the Project Path web interface:
 | | | | |
 | :- | :- | :- | :- |
 | 1. Log in to the system. | 2. Navigate to "Make a Reservation". | 3. Fill in reservation details (date & time, guest count, note, preferences). | 4. Submit and check if the reservation is successfully saved. |
-| ![Sign In](docs/images/sign-in-page.png) | ![Make reservation](docs/images/make-a-reservation-full-page.png) | ![Fill in reservation details](docs/images/make-a-reservation-full-filled-page.png) | ![My reservations](docs/images/my-reservations-page.png)      |
+| ![Sign In](docs/images/sign-in-page.png) | ![Make reservation](docs/images/make-a-reservation-full-page.png) | ![Fill in reservation details](docs/images/make-a-reservation-full-filled-page.png) | ![My reservations](docs/images/my-reservations-page.png) |
 
 ## Credits
 
