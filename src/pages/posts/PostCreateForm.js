@@ -164,7 +164,7 @@ function PostCreateForm() {
           </Container>
         </Col>
         <Col md={5} lg={4} className="d-none d-md-block p-0 p-md-2">
-          <Container className={appStyles.Content}>{textFields}</Container>
+          <Container className={`${appStyles.Content} ${appStyles.ContentText}`}>{textFields}</Container>
         </Col>
       </Row>
     </Form>

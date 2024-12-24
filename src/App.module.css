@@ -10,10 +10,15 @@
 
 .Content {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 20px;
   border-radius: 2px;
   border: 1px solid #dadadf;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.ContentText {
+  min-height: 390px;
 }
 
 /* Ensures the image covers its container, maintains aspect ratio, spans

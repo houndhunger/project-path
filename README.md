@@ -397,16 +397,6 @@ To deploy the project, follow these steps:
 
 ## User Stories  
 
-- **As a user, I want to be able to navigate the site with ease:**  
-  - **Problem:** Users need intuitive navigation to access different features across the site.  
-  - **Action:** Implement a responsive navigation bar with links to Home, Feed, and Profile, as well as sign-in and sign-up options for unauthenticated users.  
-  - **Outcome:** Users can easily navigate the site on any device. 
-
-| | | |
-| :- | :- | :-|
-|  |  |  |
-| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
-
 - **As a user, I want to register and sign in to access my account:**
   - **Problem:** Users need secure access to their personalized accounts.
   - **Action:** Implement sign-up and sign-in functionality with form validation.
@@ -426,12 +416,12 @@ To deploy the project, follow these steps:
 
 | | | |
 | :- | :- | :-|
-| User clicks on ADD PROJECT in Navigation menu, which leads user to Project Post page | User loads image by clicking on upload icon | User fills Project Title and Project Description |
+| User clicks on ADD PROJECT in Navigation menu, which forwards user to Project Post page | User loads image by clicking on upload icon | User fills Project Title and Project Description |
 | ![blank](docs/images/pages/page-addproject.png) | ![blank](docs/images/pages/page-addproject-withimage.png) | ![blank](docs/images/pages/page-addproject-filled.png) |
 | User submits project by clicking create and is forwarded to Project Post which user just created  |  |  |
 | ![blank](docs/images/pages/page-projectpost.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
-- **As a user, I want to edit or delete my content (post):**
+- **As a user, I want to edit or delete my Project Post:**
   - **Problem:** Users need the ability to modify or remove their posts after they are created.
   - **Action:** Implement edit and delete functionality on each post to allow users to update or remove their content.
   - **Outcome:** Users can easily modify or delete their posts, ensuring content remains relevant and up to date.
@@ -439,7 +429,9 @@ To deploy the project, follow these steps:
 | | | |
 | :- | :- | :-|
 | User from Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post | By clicikng pencil icon user is forwarded to Project Post Edit page | Edit coresponding fields and submit Project Post with changes by clicking save button |
-| ![blank](docs/images/pages/page-projectpost-moredropdown.png) | ![blank](docs/images/pages/page-addproject-filled.png) | ![blank](docs/images/blank.png) |
+| ![blank](docs/images/pages/page-projectpost-moredropdown.png) | ![blank](docs/images/pages/page-addproject-filled.png) | ![blank](docs/images/pages/page-addproject-edited.png) |
+| User on Project Post page clicks 3 dots to open More Dropdown offering Edit or Delete Project Post | By clicikng bin icon user is forwarded to Home Page |  |
+| ![blank](docs/images/pages/page-projectpost-moredropdown.png) | ![blank](docs/images/pages/page-homepage-frank2.png) | ![blank](docs/images/blank.png) |
 
 - **As a user, I want to view and manage my profile:**
   - **Problem:** Users need a centralized page to view and edit their personal information and posts.
@@ -448,18 +440,10 @@ To deploy the project, follow these steps:
 
 | | | |
 | :- | :- | :-|
-|  |  |  |
-| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
-
-- **As a user, I want to discover popular profiles:**
-  - **Problem:** Users need a way to find inspiring content and connect with active users.
-  - **Action:** Display a "Most Followed Profiles" section.
-  - **Outcome:** Users can easily find and follow popular profiles.
-
-| | | |
-| :- | :- | :-|
-|  |  |  |
-| ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
+| User clicks on PROFILE in Navigation Menu, which forwards user to user's Profile Page | User on Profile Page clicks 3 dots to open More Dropdown further leading to pages. | Edit Profile Page |
+| ![blank](docs/images/pages/page-profile.png) | ![blank](docs/images/pages/page-profile-moredropdown.png) | ![blank](docs/images/pages/page-profile-filled.png) |
+| Change User Name Page | Change Password page |  |
+| ![blank](docs/images/pages/page-profile-changeusername.png) | ![blank](docs/images/pages/page-profile-changepassword.png) | ![blank](docs/images/blank.png) |
 
 - **As a user, I want to engage with posts through likes and comments:**  
   - **Problem:** Users need interactive features to show appreciation and provide feedback.  
@@ -468,7 +452,7 @@ To deploy the project, follow these steps:
 
 | | | |
 | :- | :- | :-|
-|  |  |  |
+| User Can find Project of interest and like it | Or unlike it |  |
 | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) | ![blank](docs/images/blank.png) |
 
 - **As a user, I want to follow or unfollow profiles:**  
