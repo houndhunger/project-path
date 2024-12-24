@@ -272,6 +272,7 @@ To deploy the project, follow these steps:
 ## Future Enhancements
 
 - **Image Gallery for Projects:** Users can upload multiple images to a project post, offering a richer visual representation.
+- **Text fileds length control:** Implement length constraints for fields such as bio and project description. Additionally, the project feed should display a shortened version of the project description if it exceeds two to three lines.
 - **Email Notification:** Users will receive email notifications about key updates.
 - **User Messages**: Users will be able to send and receive direct messages to communicate privately with others. This will foster more personal interactions and collaboration between users.
 - **Comment on Comment & Notify:** Users will be able to reply to specific comments, creating threaded discussions. Additionally, notifications will alert users when someone replies to their comment, enhancing interaction and engagement.
@@ -501,7 +502,7 @@ To deploy the project, follow these steps:
 ### Unsolved Bugs
 
 - **Admin Styling Issue on Heroku Deployment**
-  - **Problem**: Static files, including CSS for the admin panel, were not being applied correctly after deploying the application to Heroku, causing the admin interface to appear unstyled.
+  - **Problem**: Static files, including CSS for the admin panel, are uploaded to Cloudinary, were not being applied correctly after deploying the application to Heroku, causing the admin interface to appear unstyled.
   - **Solution**: Pending investigation and update to ensure static files are properly configured and served on Heroku for correct styling in the admin panel.
 
 ## Testing
